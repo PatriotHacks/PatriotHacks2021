@@ -1,8 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'controller/form_controller.dart';
-import 'model/form.dart';
-
+import 'package:patriot_hacks/locator.dart';
+import 'package:patriot_hacks/routing/route_names.dart';
+import 'package:patriot_hacks/routing/router.dart';
+import 'package:patriot_hacks/services/navigation_service.dart';
+import 'package:patriot_hacks/widgets/layout_template/layout_template.dart';
 
 /*
 
@@ -11,62 +13,72 @@ import 'model/form.dart';
 
  */
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatefulWidget {
-  @override
-  _MyAppState createState() => _MyAppState();
+void main() {
+  setupLocator();
+  runApp(Main());
 }
 
-class _MyAppState extends State<MyApp> with TickerProviderStateMixin {
-  Animation _animate;
-  AnimationController _animationController;
-
-  @override
-  void initState() {
-    super.initState();
-    _animationController = AnimationController(
-      duration: Duration(milliseconds: 500),
-      vsync: this,
-    );
-    _animate = Tween(begin: 0.0, end: 1.0).animate(new CurvedAnimation(
-      parent: _animationController,
-      curve: Curves.elasticIn
-    ));
-    _animateMethod();
-  }
-
-  void _animateMethod() async {
-    await Future.delayed(Duration(seconds: 2));
-    _animationController.forward();
-  }
-
+class Main extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: FadeTransition(
-        opacity: _animate,
-        child: Scaffold(
-          appBar: AppBar(
-            backgroundColor: Colors.amber,
-          ),
-          backgroundColor: Colors.white,
-          body: Center(
-            child: Text(
-                "Some random stuff",
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 100,
-                fontWeight: FontWeight.w900
-              ),
-            ),
-          ),
-        ),
-      ),
+      builder: (context, child) => LayoutTemplate(child: child),
+      navigatorKey: locator<NavigationService>().navigatorKey,
+      onGenerateRoute: generateRoute,
+      initialRoute: HomeRoute,
     );
   }
 }
 
+// class MyApp extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       initialRoute: Main.route,
+//       routes: {
+//         Main.route: (context) => Main(),
+//       },
+//     );
+//   }
+// }
+//
+// class Main extends StatefulWidget {
+//   static const String route = '/';
+//   @override
+//   _MainState createState() => _MainState();
+// }
+//
+// class _MainState extends State<Main> with TickerProviderStateMixin {
+//   Animation _animate;
+//   AnimationController _animationController;
+//
+//   @override
+//   void initState() {
+//     super.initState();
+//     _animationController = AnimationController(
+//       duration: Duration(milliseconds: 1),
+//       vsync: this,
+//     );
+//     _animate = Tween(begin: 0.0, end: 1.0).animate(new CurvedAnimation(
+//       parent: _animationController,
+//       curve: Curves.easeInOutExpo
+//     ));
+//     _animateMethod();
+//   }
+//
+//   void _animateMethod() async {
+//     await Future.delayed(Duration( milliseconds: 1));
+//     _animationController.forward();
+//   }
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return FadeTransition(
+//       opacity: _animate,
+//       child: LayoutTemplate(),
+//     );
+//   }
+// }
 
 // class MyApp extends StatelessWidget {
 //   @override
