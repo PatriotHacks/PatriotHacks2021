@@ -63,22 +63,23 @@
                 scale: !8,
                 blend: !0,
                 blendModeType: "hue",
-                glitch1TimeMin: 600,
-                glitch1TimeMax: 900,
-                glitch2TimeMin: 10,
-                glitch2TimeMax: 115,
+                glitch1TimeMin: 50,
+                glitch1TimeMax: 100,
+                glitch2TimeMin: 50,
+                glitch2TimeMax: 100,
                 zIndexStart: 0
             };
             t.extend(n.prototype, {
                 init: function () {
                     this.glitch()
                 }, glitch: function () {
+
                     function e(t, e) {
                         return Math.floor(Math.random() * (e - t + 1)) + t
                     }
 
                     function s() {
-                        var i = e(10, 1900), n = 9999, a = e(10, 1300), o = 0, h = e(0, 16), f = e(0, 16), d = e(c, l);
+                        var i = e(100, 1000), n = 5000, a = e(100, 1000), o = 50, h = e(-100, 100), f = e(-100, 100), d = e(c, l);
                         t(r).css({
                             clip: "rect(" + i + "px, " + n + "px, " + a + "px," + o + "px)",
                             right: f,
@@ -87,8 +88,8 @@
                     }
 
                     function i() {
-                        var s = e(10, 1900), n = 9999, c = e(10, 1300), l = 0, f = e(-100, 100), d = e(-100, 100), m = e(o, h);
-                        if (a === !0) var x = (Math.random() * (2.1 - .9) + .9).toFixed(2); else if (a === !1) var x = 1;
+                        var s = e(100, 1000), n = 5000, c = e(100, 1000), l = 50, f = e(-100, 100), d = e(-100, 100), m = e(o, h);
+                        if (a === !0) var x = (Math.random() * (1.1 - .9) + .9).toFixed(2); else if (a === !1) var x = 1;
                         t(r).next().css({
                             clip: "rect(" + s + "px, " + n + "px, " + c + "px," + l + "px)",
                             left: f,
@@ -100,8 +101,8 @@
                     }
 
                     function n() {
-                        var s = e(10, 1900), i = 9999, c = e(10, 1300), l = 0, f = e(-100, 100), d = e(-100, 100), m = e(o, h);
-                        if (a === !0) var x = (Math.random() * (2.1 - .9) + .9).toFixed(2); else if (a === !1) var x = 1;
+                        var s = e(100, 1000), i = 5000, c = e(100, 1000), l = 50, f = e(-100, 100), d = e(-100, 100), m = e(o, h);
+                        if (a === !0) var x = (Math.random() * (1.1 - .9) + .9).toFixed(2); else if (a === !1) var x = 1;
                         t(r).next().next().css({
                             clip: "rect(" + s + "px, " + i + "px, " + c + "px," + l + "px)",
                             left: f,
@@ -115,6 +116,10 @@
                     var r = this.element, a = this.settings.scale, c = this.settings.glitch1TimeMin,
                         l = this.settings.glitch1TimeMax, o = this.settings.glitch2TimeMin,
                         h = this.settings.glitch2TimeMax, f = this.settings.zIndexStart;
+
+                    setTimeout(() => {
+
+
                     if (this.settings.destroy === !0) (t(r).hasClass("el-front-1") || t(r).hasClass("front-3") || t(r).hasClass("front-2")) && t(".front-1, .front-2, .front-3").remove(), t(".back").removeClass("back"); else if (this.settings.destroy === !1) {
                         var d = t(r).clone();
                         if (d.insertBefore(r).addClass("back").css({"z-index": 0}), this.settings.blend === !0) {
@@ -129,7 +134,14 @@
                             d.insertAfter(r).addClass("front-2").css({"z-index": 0}), t(".back").next().addClass("front-1").css({"z-index": 0}), s(), i()
                         }
                     }
+
+                    }, 1500);
+
                 }
+
+
+
+
             }), t.fn[r] = function (t) {
                 return this.each(function () {
                     new n(this, t)
@@ -145,15 +157,15 @@
                 blend: !0,
                 blendModeType: "hue",
                 glitch1TimeMin: 100,
-                glitch1TimeMax: 400,
-                glitch2TimeMin: 10,
+                glitch1TimeMax: 200,
+                glitch2TimeMin: 50,
                 glitch2TimeMax: 100
             })
         });
     </script>
 
 </head>
-<body>
+<body id="app-container">
 <!-- This script installs service_worker.js to provide PWA functionality to
      application. For more information, see:
      https://developers.google.com/web/fundamentals/primers/service-workers -->
