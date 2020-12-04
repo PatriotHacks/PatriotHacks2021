@@ -10,6 +10,15 @@ class HomePageMobileTablet extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         HomePage(),
+        Expanded(
+          child: SizedBox(
+            height: double.infinity,
+            child: Container(
+              color: Colors.amber,
+              child: Text('random stuff'),
+            ),
+          ),
+        )
       ],
     );
   }
