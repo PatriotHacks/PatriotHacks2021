@@ -19,7 +19,7 @@ class NavigationBarItem extends StatelessWidget {
           child: FlatButton(
             onPressed: () {locator<NavigationService>().navigateTo(navigationPath);},
             child: Padding(
-              padding: const EdgeInsets.all(15.0),
+              padding: const EdgeInsets.only(top: 15.0, bottom: 15.0, left: 30.0),
               child: Text(
                 title,
                 style: TextStyle(fontSize: 18),
