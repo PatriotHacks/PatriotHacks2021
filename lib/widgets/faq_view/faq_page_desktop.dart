@@ -1,11 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
 
 import '../../utils/holder.dart';
 
 class FAQPageDesktop extends StatelessWidget{
 
-  final ColorHolder colorsHolder = new ColorHolder();
+  final ColorHolder colorsHolder = GetIt.instance.get<ColorHolder>();
   final double containerHeight = 200;
   final double questionFontSize = 20;
   final double answerFontSize = 15;

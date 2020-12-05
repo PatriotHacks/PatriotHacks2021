@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
                 child: Text(
                   'PatriotHacks',
                   style:
-                      TextStyle(fontWeight: FontWeight.w800, fontSize: titleSize,),
+                    TextStyle(fontWeight: FontWeight.w800, fontSize: titleSize,),
                     textAlign: textAlignment
                 ),
               ),

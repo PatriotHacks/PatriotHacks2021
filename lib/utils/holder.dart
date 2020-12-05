@@ -1,5 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
 import 'package:patriot_hacks/utils/hex_color.dart';
 
 class ColorHolder{
