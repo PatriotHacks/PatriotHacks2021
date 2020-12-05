@@ -65,15 +65,29 @@ class FAQPageDesktop extends StatelessWidget{
   Expanded faqCard(question, answer){
     return Expanded(
         child: Container(
-          color: colorsHolder.patriotYellow,
+          decoration: BoxDecoration(
+            color: colorsHolder.patriotYellow,
+            borderRadius: BorderRadius.all(Radius.circular(15)),
+            border: Border(
+              top: BorderSide(width: 1),
+              bottom: BorderSide(width: 1),
+              left: BorderSide(width: 1),
+              right: BorderSide(width: 1),
+            ),
+          ),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                question,
-                style: TextStyle(
-                  color: colorsHolder.patriotDarkGreen,
-                ),
-              )
+              Padding(
+                padding: EdgeInsets.all(20),
+                child: Text(
+                  question,
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: colorsHolder.patriotDarkGreen,
+                  ),
+                )
+              ),
             ],
           ),
         ),
