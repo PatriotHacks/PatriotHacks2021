@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:patriot_hacks/widgets/centered_view/centered_view.dart';
+import 'package:patriot_hacks/widgets/faq_view/faq_view.dart';
 import 'package:patriot_hacks/widgets/navigation_bar/navigation_bar.dart';
 import 'package:patriot_hacks/widgets/navigation_drawer/navigation_drawer.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -7,8 +8,8 @@ import 'package:responsive_builder/responsive_builder.dart';
 
 
 class LayoutTemplate extends StatefulWidget {
-  final Widget child;
 
+  final Widget child;
   const LayoutTemplate({Key key, @required this.child}) : super(key: key);
 
   @override
@@ -54,7 +55,7 @@ class _LayoutTemplateState extends State<LayoutTemplate> with TickerProviderStat
                 NavigationBar(),
                 Expanded(
                   child: widget.child,
-                )
+                ),
               ],
             ),
           ),

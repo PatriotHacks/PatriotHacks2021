@@ -5,6 +5,7 @@ import 'package:responsive_builder/responsive_builder.dart';
 import '../../locator.dart';
 
 class NavigationBarItem extends StatelessWidget {
+
   final String title;
   final String navigationPath;
 
