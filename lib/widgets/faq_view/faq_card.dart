@@ -23,7 +23,7 @@ class FAQCardState extends State<FAQCard> {
   @override
   Widget build(BuildContext context) {
 
-    return Expanded(
+    return Flexible(
       child: Container(
         decoration: BoxDecoration(
           color: colorsHolder.patriotYellow,

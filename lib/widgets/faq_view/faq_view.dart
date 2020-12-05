@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:patriot_hacks/widgets/faq_view/faq_page.dart';
 import 'package:patriot_hacks/widgets/faq_view/faq_page_desktop.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+
+import 'faq_page_mobile_tablet.dart';
 
 class FAQView extends StatelessWidget {
   @override

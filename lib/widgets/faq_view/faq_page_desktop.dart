@@ -1,9 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:get_it/get_it.dart';
 import 'package:patriot_hacks/widgets/faq_view/faq_card.dart';
-
-import '../../utils/holder.dart';
 
 class FAQPageDesktop extends StatelessWidget{
 
