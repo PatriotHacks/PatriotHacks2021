@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:patriot_hacks/services/navigation_service.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
-import '../../locator.dart';
+import '../locator.dart';
 
 class NavigationBarItem extends StatelessWidget {
   final String title;
@@ -17,9 +17,11 @@ class NavigationBarItem extends StatelessWidget {
         builder: (context, sizingInformation) => SizedBox(
           width: sizingInformation.isDesktop ? null : double.infinity,
           child: FlatButton(
-            onPressed: () {locator<NavigationService>().navigateTo(navigationPath);},
+            onPressed: () {
+              locator<NavigationService>().navigateTo(navigationPath);
+              },
             child: Padding(
-              padding: const EdgeInsets.only(top: 15.0, bottom: 15.0, left: 30.0),
+              padding: const EdgeInsets.only(top: 15.0, bottom: 15.0),
               child: Text(
                 title,
                 style: TextStyle(fontSize: 18),
