@@ -7,6 +7,7 @@ class NavigationBarLogo extends StatelessWidget {
       height: 80,
       width: 150,
       child: Image.asset('assets/patriot_hacks_without_border.png'),
+
     );
   }
 }
