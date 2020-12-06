@@ -11,15 +11,13 @@ class FAQPageDesktop extends StatelessWidget{
   Widget build(BuildContext context) {
     return ListView(
       children: [
-
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-
             Container(
               padding: EdgeInsets.only(
-                  top: 20,
-                  bottom: 20
+                top: 20,
+                bottom: 20
               ),
               child: Text(
                 "FAQ",
@@ -72,8 +70,7 @@ class FAQPageDesktop extends StatelessWidget{
                 children: [
                   FAQCard("Do I need to be on a team?", "No worries! This event welcomes everyone of all skill levels! We will have a bunch of workshops and mentors here to help everyone learn something new, whether you've never touched a line of code or you're a seasoned veteran."),
                   spaceBetweenCards,
-                  FAQCard
-                    ("Will there be travel reimbursement?", "Because of the COVID-19 pandemic, there will be no travel reimbursements. The hackathon will be online."),
+                  FAQCard("Will there be travel reimbursement?", "Because of the COVID-19 pandemic, there will be no travel reimbursements. The hackathon will be online."),
                 ],
               ),
             ),
@@ -81,9 +78,6 @@ class FAQPageDesktop extends StatelessWidget{
         )
       ],
     );
-
   }
-
-
 
 }

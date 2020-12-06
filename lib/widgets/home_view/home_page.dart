@@ -21,35 +21,35 @@ class HomePage extends StatelessWidget {
                 textAlign: textAlignment
             ),
             Text(
-                'PatriotHacks',
-                style:
-                TextStyle(fontWeight: FontWeight.w800, fontSize: titleSize,),
-                textAlign: textAlignment
+              'PatriotHacks',
+              style:
+              TextStyle(fontWeight: FontWeight.w800, fontSize: titleSize,),
+              textAlign: textAlignment
             ),Text(
-                'PatriotHacks',
-                style:
-                TextStyle(fontWeight: FontWeight.w800, fontSize: titleSize,),
-                textAlign: textAlignment
+              'PatriotHacks',
+              style:
+              TextStyle(fontWeight: FontWeight.w800, fontSize: titleSize,),
+              textAlign: textAlignment
             ),Text(
-                'PatriotHacks',
-                style:
-                TextStyle(fontWeight: FontWeight.w800, fontSize: titleSize,),
-                textAlign: textAlignment
+              'PatriotHacks',
+              style:
+              TextStyle(fontWeight: FontWeight.w800, fontSize: titleSize,),
+              textAlign: textAlignment
             ),Text(
-                'PatriotHacks',
-                style:
-                TextStyle(fontWeight: FontWeight.w800, fontSize: titleSize,),
-                textAlign: textAlignment
+              'PatriotHacks',
+              style:
+              TextStyle(fontWeight: FontWeight.w800, fontSize: titleSize,),
+              textAlign: textAlignment
             ),Text(
-                'PatriotHacks',
-                style:
-                TextStyle(fontWeight: FontWeight.w800, fontSize: titleSize,),
-                textAlign: textAlignment
+              'PatriotHacks',
+              style:
+              TextStyle(fontWeight: FontWeight.w800, fontSize: titleSize,),
+              textAlign: textAlignment
             ),Text(
-                'PatriotHacks',
-                style:
-                TextStyle(fontWeight: FontWeight.w800, fontSize: titleSize,),
-                textAlign: textAlignment
+              'PatriotHacks',
+              style:
+              TextStyle(fontWeight: FontWeight.w800, fontSize: titleSize,),
+              textAlign: textAlignment
             ),
           ],
         );

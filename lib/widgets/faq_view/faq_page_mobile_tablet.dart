@@ -10,7 +10,6 @@ class FAQPageMobileTablet extends StatelessWidget{
 
     return ListView(
       children: [
-
         Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
@@ -84,7 +83,5 @@ class FAQPageMobileTablet extends StatelessWidget{
     );
 
   }
-
-
 
 }
