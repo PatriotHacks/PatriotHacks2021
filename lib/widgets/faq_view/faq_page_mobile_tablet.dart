@@ -8,10 +8,7 @@ class FAQPageMobileTablet extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
 
-    return ListView(
-      children: [
-
-        Column(
+        return Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
@@ -26,6 +23,7 @@ class FAQPageMobileTablet extends StatelessWidget{
               ),
             ),
             Container(
+              width: 700,
               padding: EdgeInsets.only(
                 top: 20,
               ),
@@ -39,32 +37,35 @@ class FAQPageMobileTablet extends StatelessWidget{
               )
             ),
             Container(
+              width: 700,
               padding: EdgeInsets.only(
                 top: 20,
               ),
               child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                FAQCard("What should I bring?", "Bring your school or government ID to prove your identity. You should definitly also bring your laptop, phone, and chargers."),
-                spaceBetweenCards,
-                FAQCard("Can anyone mentor or volunteer?", "Of course! Whether you're an experienced student or a working professional, you are welcome to register as a mentor to help students or to host a workshop. You can also register as a volunteer to help with on-site logistics and organizing."),
-              ],
-            )
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  FAQCard("What should I bring?", "Bring your school or government ID to prove your identity. You should definitly also bring your laptop, phone, and chargers."),
+                  spaceBetweenCards,
+                  FAQCard("Can anyone mentor or volunteer?", "Of course! Whether you're an experienced student or a working professional, you are welcome to register as a mentor to help students or to host a workshop. You can also register as a volunteer to help with on-site logistics and organizing."),
+                ],
+              )
             ),
             Container(
+              width: 700,
               padding: EdgeInsets.only(
                 top: 20,
               ),
               child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                FAQCard("Are hardware hacks allowed?", "Because of the COVID-19 pandemic, we may offer this option in some alternative format. For now, you may refer to a MLH's Hardware Lab for more information on getting hardware for your hacks."),
-                spaceBetweenCards,
-                FAQCard("What if I don't know how to code?", "No worries! This event welcomes everyone of all skill levels! We will have a bunch of workshops and mentors here to help everyone learn something new, whether you've never touched a line of code or you're a seasoned veteran."),
-              ],
-            )
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  FAQCard("Are hardware hacks allowed?", "Because of the COVID-19 pandemic, we may offer this option in some alternative format. For now, you may refer to a MLH's Hardware Lab for more information on getting hardware for your hacks."),
+                  spaceBetweenCards,
+                  FAQCard("What if I don't know how to code?", "No worries! This event welcomes everyone of all skill levels! We will have a bunch of workshops and mentors here to help everyone learn something new, whether you've never touched a line of code or you're a seasoned veteran."),
+                ],
+              )
             ),
             Container(
+              width: 700,
               padding: EdgeInsets.only(
                 top: 20,
               ),
@@ -79,12 +80,8 @@ class FAQPageMobileTablet extends StatelessWidget{
               )
             )
           ],
-        )
-      ],
-    );
+        );
 
   }
-
-
 
 }

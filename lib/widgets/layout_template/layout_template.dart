@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:footer/footer.dart';
-import 'package:footer/footer_view.dart';
 import 'package:get_it/get_it.dart';
-import 'package:patriot_hacks/widgets/centered_view/centered_view.dart';
-import 'package:patriot_hacks/widgets/footer/footer.dart';
-import 'package:patriot_hacks/widgets/navigation_bar/navigation_bar.dart';
 import 'package:patriot_hacks/widgets/navigation_drawer/navigation_drawer.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class LayoutTemplate extends StatefulWidget {
+
   final Widget child;
 
   const LayoutTemplate({Key key, @required this.child}) : super(key: key);
