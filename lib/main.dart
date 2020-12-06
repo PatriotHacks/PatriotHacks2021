@@ -23,7 +23,7 @@ class Main extends StatelessWidget {
       },
       navigatorKey: locator<NavigationService>().navigatorKey,
       onGenerateRoute: generateRoute,
-      initialRoute: HomeRoute,
+      initialRoute: ErrorRoute,
     );
   }
 }
