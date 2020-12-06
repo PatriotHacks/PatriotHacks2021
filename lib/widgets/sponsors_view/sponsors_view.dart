@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:patriot_hacks/widgets/body/body.dart';
 
 class SponsorsView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(child: Center(
+    return Body(height:50,child: Center(
       child: Text('sponsors view'),
     ),);
   }

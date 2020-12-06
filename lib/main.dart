@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:patriot_hacks/locator.dart';
+import 'package:patriot_hacks/widgets/locator.dart';
 import 'package:patriot_hacks/routing/route_names.dart';
 import 'package:patriot_hacks/routing/router.dart';
 import 'package:patriot_hacks/services/navigation_service.dart';
@@ -17,7 +17,10 @@ class Main extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      builder: (context, child) => LayoutTemplate(child: child),
+      builder: (context, child) {
+        print(child.runtimeType);
+        return LayoutTemplate(child: child);
+      },
       navigatorKey: locator<NavigationService>().navigatorKey,
       onGenerateRoute: generateRoute,
       initialRoute: HomeRoute,
