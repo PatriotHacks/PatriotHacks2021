@@ -8,13 +8,19 @@ import 'faq_page_mobile_tablet.dart';
 class FAQView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Body(
-      height: 1100,
-      child: ScreenTypeLayout(
-        desktop: FAQPageDesktop(),
-        mobile: FAQPageMobileTablet(),
-        tablet: FAQPageMobileTablet(),
-      ),
+    return Flex(
+      direction: Axis.vertical,
+      children: [
+        Expanded(
+          child: Body(
+            child: ScreenTypeLayout(
+              desktop: FAQPageDesktop(),
+              mobile: FAQPageMobileTablet(),
+              tablet: FAQPageMobileTablet(),
+            ),
+          ),
+        )
+      ],
     );
   }
 }
