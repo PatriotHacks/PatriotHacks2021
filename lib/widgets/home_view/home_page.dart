@@ -10,23 +10,48 @@ class HomePage extends StatelessWidget {
         var textAlignment = TextAlign.center;
         double titleSize = sizingInformation.isMobile ? 50 : 80;
         // double descriptionSize = sizingInformation.isMobile ? 16 : 21;
-        return Container(
-          width: 600,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SizedBox(
-                width: double.infinity,
-                child: Text(
-                  'PatriotHacks',
-                  style:
-                    TextStyle(fontWeight: FontWeight.w800, fontSize: titleSize,),
-                    textAlign: textAlignment
-                ),
-              ),
-            ],
-          ),
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'PatriotHacks',
+              style:
+                  TextStyle(fontWeight: FontWeight.w800, fontSize: titleSize,),
+                textAlign: textAlignment
+            ),
+            Text(
+                'PatriotHacks',
+                style:
+                TextStyle(fontWeight: FontWeight.w800, fontSize: titleSize,),
+                textAlign: textAlignment
+            ),Text(
+                'PatriotHacks',
+                style:
+                TextStyle(fontWeight: FontWeight.w800, fontSize: titleSize,),
+                textAlign: textAlignment
+            ),Text(
+                'PatriotHacks',
+                style:
+                TextStyle(fontWeight: FontWeight.w800, fontSize: titleSize,),
+                textAlign: textAlignment
+            ),Text(
+                'PatriotHacks',
+                style:
+                TextStyle(fontWeight: FontWeight.w800, fontSize: titleSize,),
+                textAlign: textAlignment
+            ),Text(
+                'PatriotHacks',
+                style:
+                TextStyle(fontWeight: FontWeight.w800, fontSize: titleSize,),
+                textAlign: textAlignment
+            ),Text(
+                'PatriotHacks',
+                style:
+                TextStyle(fontWeight: FontWeight.w800, fontSize: titleSize,),
+                textAlign: textAlignment
+            ),
+          ],
         );
       },
     );
