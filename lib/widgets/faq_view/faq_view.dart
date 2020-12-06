@@ -9,7 +9,7 @@ class FAQView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Body(
-      height: 1000,
+      height: 1100,
       child: ScreenTypeLayout(
         desktop: FAQPageDesktop(),
         mobile: FAQPageMobileTablet(),
