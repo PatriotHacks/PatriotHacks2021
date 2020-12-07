@@ -56,10 +56,17 @@ flutter:
   # assets:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
+
   assets:
     - assets/logo-2018-hi-res-green.png
     - assets/patriot_hacks_with_border.png
     - assets/patriot_hacks_without_border.png
+    - assets/gdit.png
+    - assets/caci.png
+    - assets/accurture.png
+    - assets/costar.png
+    - assets/battele.png
+    - assets/informedxp.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
