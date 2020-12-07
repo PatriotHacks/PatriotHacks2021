@@ -70,8 +70,8 @@ class HomePage extends StatelessWidget {
               ),
               Container(
                 padding: EdgeInsets.only(
-                  top: 10,
-                  bottom: 10,
+                  top: 30,
+                  bottom: 15,
                 ),
                 child: Text(
                   'PatriotHacks is a collegiate hackathon held at George Mason University in Fairfax, Virginia. For 36 hours, students from across the world will be free to enjoy plenty of workshops, activities, and networking events, along with free swag and food all weekend long. PatriotHacks is a space for innovators to play, learn, break, and revolutionize technology, all while building their resume and making memories that will last a lifetime. The event is free, and no experience is required to attend. Join us in our all new makerspace, also known as the MIX (Mason Innovation eXchange)!',
@@ -84,7 +84,6 @@ class HomePage extends StatelessWidget {
               ),
               Container(
                 padding: EdgeInsets.only(
-                  top: 10,
                   bottom: 10,
                 ),
                 child: Text.rich(
@@ -104,6 +103,31 @@ class HomePage extends StatelessWidget {
                     ],
                   ),
                 ),
+              ),
+              Container(
+                padding: EdgeInsets.only(
+                  top: 30,
+                  bottom: 15,
+                ),
+                child: Text(
+                  'How do I get involved?',
+                  style: TextStyle(
+                    color: colorsHolder.patriotDarkGreen,
+                    fontSize: wiphFontSize,
+                  ),
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.all(20),
+                child: Row(
+                  children: [
+                    howToGetInvolvedCard(FontAwesomeIcons.accessibleIcon, "Testing", "Testing"),
+                    horizationtalSpace(),
+                    howToGetInvolvedCard(FontAwesomeIcons.accessibleIcon, "Testing", "Testing"),
+                    horizationtalSpace(),
+                    howToGetInvolvedCard(FontAwesomeIcons.accessibleIcon, "Testing", "Testing"),
+                  ],
+                ),
               )
             ],
           ),
@@ -118,6 +142,36 @@ class HomePage extends StatelessWidget {
       iconSize: 50,
       disabledColor: colorsHolder.patriotLime,
       hoverColor: colorsHolder.patriotDarkGreen,
+    );
+  }
+
+  Widget howToGetInvolvedCard(IconData icon, String header, String txt){
+
+    final double headerSize = 20;
+
+    return Expanded(
+      child: Container(
+        color: colorsHolder.patriotYellow,
+        padding: EdgeInsets.all(10),
+        child: Column(
+          children: [
+            Text(
+              header,
+              style: TextStyle(
+                color: colorsHolder.patriotDarkGreen,
+                fontSize: headerSize,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+
+  }
+
+  Widget horizationtalSpace(){
+    return SizedBox(
+      width: 50,
     );
   }
 
