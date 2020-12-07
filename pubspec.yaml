@@ -47,6 +47,14 @@ dev_dependencies:
 # The following section is specific to Flutter.
 flutter:
 
+  fonts:
+    - family: Tifax
+      fonts:
+        - asset: fonts/Tifax.ttf
+    - family: Modeseven
+      fonts:
+        - asset: fonts/Modeseven.ttf
+
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
@@ -58,6 +66,7 @@ flutter:
   #   - images/a_dot_ham.jpeg
 
   assets:
+
     - assets/logo-2018-hi-res-green.png
     - assets/patriot_hacks_with_border.png
     - assets/patriot_hacks_without_border.png

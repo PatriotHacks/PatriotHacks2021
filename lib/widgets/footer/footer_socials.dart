@@ -1,12 +1,13 @@
-import 'package:flutter/material.dart';
 // ignore: avoid_web_libraries_in_flutter
 import 'dart:html' as html;
 
+import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get_it/get_it.dart';
 import 'package:patriot_hacks/utils/holder.dart';
 
 class FooterSocials extends StatelessWidget {
+
   final String _twitter = 'https://twitter.com/patriothacks';
   final String _facebook = 'https://www.facebook.com/patriothacks/';
   final String _instagram = 'https://www.instagram.com/patriothacks/';
@@ -33,7 +34,7 @@ class FooterSocials extends StatelessWidget {
                 children: [
                   FaIcon(FontAwesomeIcons.facebook, color: getIt<ColorHolder>().patriotGreen,),
                   SizedBox(width: 5,),
-                  Text('Facebook', style: TextStyle(color: getIt<ColorHolder>().patriotGreen,),),
+                  Text('Facebook', style: TextStyle(color: getIt<ColorHolder>().patriotGreen,fontFamily: getIt<FontHolder>().paragraphFont,),),
                 ],
               ),
               onPressed: () {
@@ -51,7 +52,7 @@ class FooterSocials extends StatelessWidget {
                 children: [
                   FaIcon(FontAwesomeIcons.twitter, color: getIt<ColorHolder>().patriotGreen,),
                   SizedBox(width: 5,),
-                  Text('Twitter',  style: TextStyle(color: getIt<ColorHolder>().patriotGreen,)),
+                  Text('Twitter',  style: TextStyle(color: getIt<ColorHolder>().patriotGreen,fontFamily: getIt<FontHolder>().paragraphFont,)),
                 ],
               ),
               onPressed: () {
