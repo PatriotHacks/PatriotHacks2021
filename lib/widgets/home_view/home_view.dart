@@ -9,7 +9,6 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Body(
-      height: 700,
       child: ScreenTypeLayout(
         mobile: HomePageMobileTablet(),
         tablet: HomePageMobileTablet(),
