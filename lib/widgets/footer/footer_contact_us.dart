@@ -27,7 +27,7 @@ class FooterContactUs extends StatelessWidget {
           Text('Contact us', style: TextStyle(
             fontWeight: FontWeight.w600,
             fontSize: 20,
-            color: getIt<ColorHolder>().patriotGold,
+            color: getIt<ColorHolder>().patriotGreen,
           ),),
           SizedBox(height: 20,),
           RichText(
@@ -36,7 +36,7 @@ class FooterContactUs extends StatelessWidget {
                 children: [
                   TextSpan(
                     text: 'For more information, email\n\n us at ',
-                    style: TextStyle(color: getIt<ColorHolder>().patriotGold,),
+                    style: TextStyle(color: getIt<ColorHolder>().patriotGreen,),
                   ),
                   TextSpan(
                       text: _email,

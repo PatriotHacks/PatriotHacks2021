@@ -19,7 +19,7 @@ class FooterCodeOfConduct extends StatelessWidget {
           Text('Code of conduct', style: TextStyle(
             fontWeight: FontWeight.w600,
             fontSize: 20,
-            color: getIt<ColorHolder>().patriotGold,
+            color: getIt<ColorHolder>().patriotGreen,
           ),),
           SizedBox(height: 20,),
           RichText(
@@ -28,7 +28,7 @@ class FooterCodeOfConduct extends StatelessWidget {
               children: [
                 TextSpan(
                   text: 'If you intend to participate in this\n\nevent you must agree to the\n\n',
-                  style: TextStyle(color: getIt<ColorHolder>().patriotGold,),
+                  style: TextStyle(color: getIt<ColorHolder>().patriotGreen,),
                 ),
                 TextSpan(
                   text: 'George Mason Student Code of Conduct',
