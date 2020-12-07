@@ -29,10 +29,10 @@ class NavigationBarDesktop extends StatelessWidget {
               SizedBox(
                 width: 20,
               ),
-              NavigationBarItem('Discord', DiscordRoute),
-              SizedBox(
-                width: 20,
-              ),
+              // NavigationBarItem('Discord', DiscordRoute),
+              // SizedBox(
+              //   width: 20,
+              // ),
               NavigationBarItem('FAQ', FAQRoute),
               SizedBox(
                 width: 20,

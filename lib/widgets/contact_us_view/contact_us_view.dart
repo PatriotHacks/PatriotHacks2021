@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:patriot_hacks/widgets/body/body.dart';
-import 'package:patriot_hacks/widgets/contact_us_view/contact_us_page_desktop.dart';
-import 'package:patriot_hacks/widgets/contact_us_view/contact_us_page_mob_tab.dart';
+import 'package:patriot_hacks/widgets/contact_us_view/contact_us_page.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 
@@ -14,9 +13,9 @@ class ContactUsView extends StatelessWidget {
         Expanded(
           child: Body(
             child: ScreenTypeLayout(
-              desktop: ContactUsPageDesktop(),
-              mobile: ContactUsPageMobile(),
-              tablet: ContactUsPageMobile(),
+              desktop: ContactUsPage(),
+              mobile: ContactUsPage(),
+              tablet: ContactUsPage(),
             ),
           ),
         )

@@ -1,7 +1,7 @@
-import 'dart:html' as html;
 
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
+import 'package:patriot_hacks/routing/route_names.dart';
 import 'package:patriot_hacks/utils/holder.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
@@ -32,12 +32,12 @@ class HomePage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SizedBox(
-                height: 50,
+                height: sizingInformation.isDesktop ? 50 : 0,
               ),
               SizedBox(
                 child: imagesHolder.patriotLogo,
-                height: 250,
-                width: 250,
+                height: sizingInformation.isMobile ? 150 : 250,
+                width: sizingInformation.isMobile ? 150 : 250,
               ),
               SizedBox(
                 height: 50,
@@ -46,7 +46,7 @@ class HomePage extends StatelessWidget {
                 child: Text(
                   'What Is PatriotHacks?',
                   style: TextStyle(
-                    fontSize: wiphFontSize,
+                    fontSize: sizingInformation.isMobile ? 20 : wiphFontSize,
                     color: colorsHolder.patriotGold,
                   ),
                 ),
@@ -60,7 +60,7 @@ class HomePage extends StatelessWidget {
                   text: TextSpan(
                     style: TextStyle(
                       fontFamily: fontHolder.paragraphFont,
-                      fontSize: wiphParagraphFontSize,
+                      fontSize: sizingInformation.isMobile ? 15 : wiphParagraphFontSize,
                       color: colorsHolder.patriotGreen,
                       height: 1.25
                     ),
@@ -86,11 +86,11 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               verticalSpace(15),
-              homePageButton("Registration", registrationButtonLink),
+              homePageButton("Registration", RegisterRoute, context),
               verticalSpace(10),
-              homePageButton("Mentor", mentorButtonLink),
-              verticalSpace(10),
-              homePageButton("Sponsor", sponsorButtonLink),
+              // homePageButton("Mentor", mentorButtonLink),
+              // verticalSpace(10),
+              homePageButton("Sponsor", SponsorsRoute, context),
             ],
           ),
         );
@@ -131,13 +131,14 @@ class HomePage extends StatelessWidget {
 //
 //  }
 
-  Widget homePageButton(String txt, String link){
+  Widget homePageButton(String txt, String link, BuildContext context){
     return Container(
       width: 300,
-      color: colorsHolder.patriotYellow,
       child: FlatButton(
+        color: colorsHolder.patriotGold,
         onPressed: () {
-          html.window.open(link, '_blank');
+          // html.window.open(link, '_blank');
+          Navigator.of(context).pushNamed(link);
         },
         hoverColor: colorsHolder.patriotDarkGreen,
         padding: EdgeInsets.all(20),

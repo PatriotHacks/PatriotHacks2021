@@ -26,15 +26,15 @@ class FooterSocials extends StatelessWidget {
           SizedBox(height: 20,),
           Container(
             padding: EdgeInsets.all(2),
-            width: 120,
+            width: 125,
             height: 45,
             child: FlatButton(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  FaIcon(FontAwesomeIcons.facebook, color: getIt<ColorHolder>().patriotGreen,),
+                  FaIcon(FontAwesomeIcons.facebook, color: getIt<ColorHolder>().patriotGold,),
                   SizedBox(width: 5,),
-                  Text('Facebook', style: TextStyle(color: getIt<ColorHolder>().patriotGreen,fontFamily: getIt<FontHolder>().paragraphFont,),),
+                  Text('Facebook', style: TextStyle(color: getIt<ColorHolder>().patriotGold,fontFamily: getIt<FontHolder>().paragraphFont,),),
                 ],
               ),
               onPressed: () {
@@ -44,15 +44,15 @@ class FooterSocials extends StatelessWidget {
           ),
           Container(
             padding: EdgeInsets.all(2),
-            width: 120,
+            width: 125,
             height: 45,
             child: FlatButton(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  FaIcon(FontAwesomeIcons.twitter, color: getIt<ColorHolder>().patriotGreen,),
+                  FaIcon(FontAwesomeIcons.twitter, color: getIt<ColorHolder>().patriotGold,),
                   SizedBox(width: 5,),
-                  Text('Twitter',  style: TextStyle(color: getIt<ColorHolder>().patriotGreen,fontFamily: getIt<FontHolder>().paragraphFont,)),
+                  Text('Twitter',  style: TextStyle(color: getIt<ColorHolder>().patriotGold,fontFamily: getIt<FontHolder>().paragraphFont,)),
                 ],
               ),
               onPressed: () {
@@ -62,15 +62,15 @@ class FooterSocials extends StatelessWidget {
           ),
           Container(
             padding: EdgeInsets.all(2),
-            width: 120,
+            width: 125,
             height: 45,
             child: FlatButton(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  FaIcon(FontAwesomeIcons.instagram, color: getIt<ColorHolder>().patriotGreen,),
+                  FaIcon(FontAwesomeIcons.instagram, color: getIt<ColorHolder>().patriotGold,),
                   SizedBox(width: 5,),
-                  Text('Instagram',  style: TextStyle(color: getIt<ColorHolder>().patriotGreen,)),
+                  Text('Instagram',  style: TextStyle(color: getIt<ColorHolder>().patriotGold,fontFamily: getIt<FontHolder>().paragraphFont,)),
                 ],
               ),
               onPressed: () {
