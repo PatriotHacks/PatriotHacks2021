@@ -10,18 +10,25 @@ import 'package:patriot_hacks/widgets/body/body.dart';
 final GetIt getIt = GetIt.instance;
 
 class RegisterView extends StatelessWidget {
+
+  final _registerFormSrc = 'https://form.typeform.com/to/RvTX5VYm?typeform-medium=embed-snippet';
+
   @override
   Widget build(BuildContext context) {
-    return Body(
-      height: 200,
-      child: Center(
-        child: Column(
-          children: [
-            Text('register view'),
-            // IframeScreen(600, 800, _src)
-          ],
+    return Flex(
+        direction: Axis.vertical,
+        children: [Expanded(
+        child: Body(
+          child: Center(
+            child: Column(
+              children: [
+                IframeScreen(800, 600, _registerFormSrc)
+              ],
+            ),
+          ),
         ),
       ),
+      ]
     );
   }
 }
