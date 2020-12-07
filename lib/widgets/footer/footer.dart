@@ -29,7 +29,7 @@ class _Desktop extends StatelessWidget {
     return Column(
       children: [
         Divider(
-          color: getIt<ColorHolder>().patriotGold,
+          color: getIt<ColorHolder>().patriotGreen,
           height: 1,
           thickness: 1,
         ),
@@ -59,7 +59,7 @@ class _MobileTablet extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         Divider(
-          color: getIt<ColorHolder>().patriotGold,
+          color: getIt<ColorHolder>().patriotGreen,
           height: 1,
           thickness: 1,
         ),
