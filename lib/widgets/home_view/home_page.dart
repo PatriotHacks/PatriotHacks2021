@@ -1,8 +1,6 @@
-import 'dart:html' as html;
 
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-import 'package:patriot_hacks/main.dart';
 import 'package:patriot_hacks/routing/route_names.dart';
 import 'package:patriot_hacks/utils/holder.dart';
 import 'package:responsive_builder/responsive_builder.dart';
