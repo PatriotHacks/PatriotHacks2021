@@ -23,7 +23,7 @@ class FAQCardState extends State<FAQCard> {
   @override
   Widget build(BuildContext context) {
 
-    return Flexible(
+    return Expanded(
       child: Container(
         decoration: BoxDecoration(
           color: colorsHolder.patriotYellow,
@@ -50,15 +50,16 @@ class FAQCardState extends State<FAQCard> {
             ),
             Padding(
               padding: EdgeInsets.only(
-                  left: 20,
-                  right: 20,
-                  bottom: 20
+                left: 20,
+                right: 20,
+                bottom: 20
               ),
               child: Text(
                 answer,
                 style: TextStyle(
                   fontSize: FAQInfo.answerFontSize,
                   color: Colors.black,
+                  height: 1.25
                 ),
               ),
             )
