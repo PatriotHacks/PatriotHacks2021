@@ -4,7 +4,6 @@ import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-import 'package:patriot_hacks/utils/holder.dart';
 import 'package:patriot_hacks/widgets/body/body.dart';
 
 final GetIt getIt = GetIt.instance;
@@ -63,10 +62,10 @@ class _IframeScreenState extends State<IframeScreen> {
     _iframeElement.style.border = 'none';
 
     // ignore: undefined_prefixed_name
-    ui.platformViewRegistry.registerViewFactory(
-      'iframeElement',
-          (int viewId) => _iframeElement,
-    );
+//    ui.platformViewRegistry.registerViewFactory(
+//      'iframeElement',
+//          (int viewId) => _iframeElement,
+//    );
 
     _iframeWidget = HtmlElementView(
       key: UniqueKey(),

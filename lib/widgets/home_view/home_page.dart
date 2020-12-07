@@ -13,12 +13,15 @@ class HomePage extends StatelessWidget {
   final double subTitleFontSize = 20;
 
   // What is Patriot Hacks
-  final double wiphFontSize = 25;
-  final double wiphParagraphFontSize = 15;
+  final double wiphFontSize = 30;
+  final double wiphParagraphFontSize = 20;
 
   final ColorHolder colorsHolder = GetIt.instance.get<ColorHolder>();
+  final ImageHolder imagesHolder = GetIt.instance.get<ImageHolder>();
 
-  final String mixGMULink = "https://www.mix.gmu.edu/";
+  final String registrationButtonLink = "https://www.mix.gmu.edu/";
+  final String mentorButtonLink = "https://www.mix.gmu.edu/";
+  final String sponsorButtonLink = "https://www.mix.gmu.edu/";
 
   @override
   Widget build(BuildContext context) {
@@ -32,30 +35,11 @@ class HomePage extends StatelessWidget {
               SizedBox(
                 height: 50,
               ),
-              Container(
-                child: Text(
-                  'PatriotHacks',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: titleFontSize,
-                    color: colorsHolder.patriotDarkGreen,
-                  ),
-                ),
-              ),
-              Container(
-                child: Text(
-                  'George Mason University',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: subTitleFontSize,
-                    color: colorsHolder.patriotDarkGreen,
-                  ),
-                ),
-              ),
               SizedBox(
-                height: 50,
+                child: imagesHolder.patriotLogo,
+                height: 250,
+                width: 250,
               ),
-              downArrow(),
               SizedBox(
                 height: 50,
               ),
@@ -64,7 +48,8 @@ class HomePage extends StatelessWidget {
                   'What Is PatriotHacks?',
                   style: TextStyle(
                     fontSize: wiphFontSize,
-                    color: colorsHolder.patriotDarkGreen,
+                    color: colorsHolder.patriotGold,
+                    fontWeight: FontWeight.w700,
                   ),
                 ),
               ),
@@ -73,8 +58,22 @@ class HomePage extends StatelessWidget {
                   top: 30,
                   bottom: 15,
                 ),
-                child: Text(
-                  'PatriotHacks is a collegiate hackathon held at George Mason University in Fairfax, Virginia. For 36 hours, students from across the world will be free to enjoy plenty of workshops, activities, and networking events, along with free swag and food all weekend long. PatriotHacks is a space for innovators to play, learn, break, and revolutionize technology, all while building their resume and making memories that will last a lifetime. The event is free, and no experience is required to attend. Join us in our all new makerspace, also known as the MIX (Mason Innovation eXchange)!',
+                child: Text.rich(
+                  TextSpan(
+                    text: 'PatriotHacks is a collegiate hackathon that will be held entirely online due to the COVID-19 pandemic. For 14 days, students from across the world will be free to enjoy plenty of workshops, activities, and networking events, along with free swag (limited to participants in the US). PatriotHacks is a space for innovators to play, learn, break, and revolutionize technology, all while building their resume and making memories that will last a lifetime. The event is free, and no experience is required to attend. Join us in January 2021 for our',
+                    children: <InlineSpan>[
+                      TextSpan(
+                        text: ' mini ',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: colorsHolder.patriotGold
+                        ),
+                      ),
+                      TextSpan(
+                        text: 'hackathon and start off your new year right!'
+                      )
+                    ],
+                  ),
                   textAlign: TextAlign.center,
                   style: TextStyle(
                       fontSize: wiphParagraphFontSize,
@@ -82,53 +81,12 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
-              Container(
-                padding: EdgeInsets.only(
-                  bottom: 10,
-                ),
-                child: Text.rich(
-                  TextSpan(
-                    text: "To learn more about the MIX, check out their website at ",
-                    children: <InlineSpan>[
-                      TextSpan(
-                        text: "https://www.mix.gmu.edu/",
-                        style: TextStyle(
-                          color: Colors.blue,
-                        ),
-                        recognizer: TapGestureRecognizer()
-                          ..onTap = () {
-                            html.window.open(mixGMULink, '_blank');
-                          },
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              Container(
-                padding: EdgeInsets.only(
-                  top: 30,
-                  bottom: 15,
-                ),
-                child: Text(
-                  'How do I get involved?',
-                  style: TextStyle(
-                    color: colorsHolder.patriotDarkGreen,
-                    fontSize: wiphFontSize,
-                  ),
-                ),
-              ),
-              Container(
-                padding: EdgeInsets.all(20),
-                child: Row(
-                  children: [
-                    howToGetInvolvedCard(FontAwesomeIcons.accessibleIcon, "Testing", "Testing"),
-                    horizationtalSpace(),
-                    howToGetInvolvedCard(FontAwesomeIcons.accessibleIcon, "Testing", "Testing"),
-                    horizationtalSpace(),
-                    howToGetInvolvedCard(FontAwesomeIcons.accessibleIcon, "Testing", "Testing"),
-                  ],
-                ),
-              )
+              verticalSpace(15),
+              homePageButton("Registration", registrationButtonLink),
+              verticalSpace(10),
+              homePageButton("Mentor", mentorButtonLink),
+              verticalSpace(10),
+              homePageButton("Sponsor", sponsorButtonLink),
             ],
           ),
         );
@@ -136,42 +94,62 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  Widget downArrow(){
-    return IconButton(
-      icon: FaIcon(FontAwesomeIcons.arrowDown),
-      iconSize: 50,
-      disabledColor: colorsHolder.patriotLime,
-      hoverColor: colorsHolder.patriotDarkGreen,
-    );
-  }
+//  Widget downArrow(){
+//    return IconButton(
+//      icon: FaIcon(FontAwesomeIcons.arrowDown),
+//      iconSize: 50,
+//      disabledColor: colorsHolder.patriot,
+//      hoverColor: colorsHolder.patriotDarkGreen,
+//    );
+//  }
 
-  Widget howToGetInvolvedCard(IconData icon, String header, String txt){
+//  Widget howToGetInvolvedCard(IconData icon, String header, String txt){
+//
+//    final double headerSize = 20;
+//
+//    return Expanded(
+//      child: Container(
+//        color: colorsHolder.patriotYellow,
+//        padding: EdgeInsets.all(10),
+//        child: Column(
+//          children: [
+//            Text(
+//              header,
+//              style: TextStyle(
+//                color: colorsHolder.patriotDarkGreen,
+//                fontSize: headerSize,
+//              ),
+//            ),
+//          ],
+//        ),
+//      ),
+//    );
+//
+//  }
 
-    final double headerSize = 20;
-
-    return Expanded(
-      child: Container(
-        color: colorsHolder.patriotYellow,
-        padding: EdgeInsets.all(10),
-        child: Column(
-          children: [
-            Text(
-              header,
-              style: TextStyle(
-                color: colorsHolder.patriotDarkGreen,
-                fontSize: headerSize,
-              ),
-            ),
-          ],
+  Widget homePageButton(String txt, String link){
+    return Container(
+      width: 300,
+      color: colorsHolder.patriotYellow,
+      child: FlatButton(
+        onPressed: () {
+          html.window.open(link, '_blank');
+        },
+        hoverColor: colorsHolder.patriotDarkGreen,
+        padding: EdgeInsets.all(20),
+        child: Text(
+          txt,
+          style: TextStyle(
+            color: colorsHolder.patriotGreen,
+          ),
         ),
       ),
     );
-
   }
 
-  Widget horizationtalSpace(){
+  Widget verticalSpace(double amount){
     return SizedBox(
-      width: 50,
+      height: amount,
     );
   }
 
