@@ -34,7 +34,7 @@ class _BodyState extends State<Body> {
           child: CenteredView(
             child: Container(
               padding: EdgeInsets.all(30.0),
-              height: sizingInformation.isDesktop ? 259 : 521,
+              height: sizingInformation.isDesktop ? 264 : 521,
               child: CustomFooter(),
             ),
           ),

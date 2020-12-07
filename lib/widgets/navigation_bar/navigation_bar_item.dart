@@ -22,6 +22,8 @@ class NavigationBarItem extends StatelessWidget {
         builder: (context, sizingInformation) => SizedBox(
           width: sizingInformation.isDesktop ? null : double.infinity,
           child: FlatButton(
+            color: sizingInformation.isMobile || sizingInformation.isTablet ? null : ModalRoute.of(context).settings.name == navigationPath ? getIt<ColorHolder>().patriotGold : null,
+            hoverColor: getIt<ColorHolder>().patriotGold,
             onPressed: () {
               locator<NavigationService>().navigateTo(navigationPath);
               },
