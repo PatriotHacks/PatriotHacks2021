@@ -69,10 +69,10 @@ class _IframeScreenState extends State<IframeScreen> {
     _iframeElement.style.border = 'none';
 
     // ignore: undefined_prefixed_name
-//    ui.platformViewRegistry.registerViewFactory(
-//      'iframeElement',
-//          (int viewId) => _iframeElement,
-//    );
+   ui.platformViewRegistry.registerViewFactory(
+     'iframeElement',
+         (int viewId) => _iframeElement,
+   );
 
     _iframeWidget = HtmlElementView(
       key: UniqueKey(),
