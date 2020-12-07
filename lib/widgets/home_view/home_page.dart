@@ -27,7 +27,7 @@ class HomePage extends StatelessWidget {
     return ResponsiveBuilder(
       builder: (context, sizingInformation) {
         return Padding(
-          padding: EdgeInsets.all(20),
+          padding: EdgeInsets.all(40),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
