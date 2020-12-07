@@ -29,3 +29,16 @@ class ImageHolder{
   }
 
 }
+
+class FontHolder{
+
+  // the header one does not fucking work
+  var headerFont;
+  var paragraphFont;
+
+  FontHolder(){
+    this.headerFont = "Tifax";
+    this.paragraphFont = "Modeseven";
+  }
+
+}

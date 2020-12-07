@@ -30,8 +30,12 @@ class Main extends StatelessWidget {
       initialRoute: HomeRoute,
       theme: ThemeData(
         textTheme: TextTheme(
-          bodyText1: TextStyle(),
-          bodyText2: TextStyle(),
+          bodyText1: TextStyle(
+            fontFamily: getIt.get<FontHolder>().paragraphFont,
+          ),
+          bodyText2: TextStyle(
+            fontFamily: getIt.get<FontHolder>().paragraphFont,
+          ),
         ).apply(
           bodyColor: getIt<ColorHolder>().patriotGreen,
           displayColor: getIt<ColorHolder>().patriotGreen,
