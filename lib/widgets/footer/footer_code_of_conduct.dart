@@ -28,11 +28,11 @@ class FooterCodeOfConduct extends StatelessWidget {
               children: [
                 TextSpan(
                   text: 'If you intend to participate in this\n\nevent you must agree to the\n\n',
-                  style: TextStyle(color: getIt<ColorHolder>().patriotGreen,),
+                  style: TextStyle(color: getIt<ColorHolder>().patriotGreen,fontFamily: getIt<FontHolder>().paragraphFont,),
                 ),
                 TextSpan(
                   text: 'George Mason Student Code of Conduct',
-                  style: TextStyle(color: Colors.blueAccent, decoration: TextDecoration.underline),
+                  style: TextStyle(color: getIt.get<ColorHolder>().patriotGold, decoration: TextDecoration.underline,fontFamily: getIt<FontHolder>().paragraphFont,),
                   recognizer: TapGestureRecognizer()
                     ..onTap = () {
                       html.window.open(_codeOfConduct, '_blank');

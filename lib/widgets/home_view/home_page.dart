@@ -1,11 +1,9 @@
-import 'package:flutter/gestures.dart';
+import 'dart:html' as html;
+
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get_it/get_it.dart';
 import 'package:patriot_hacks/utils/holder.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-
-import 'dart:html' as html;
 
 class HomePage extends StatelessWidget {
   
@@ -18,6 +16,7 @@ class HomePage extends StatelessWidget {
 
   final ColorHolder colorsHolder = GetIt.instance.get<ColorHolder>();
   final ImageHolder imagesHolder = GetIt.instance.get<ImageHolder>();
+  final FontHolder fontHolder = GetIt.instance.get<FontHolder>();
 
   final String registrationButtonLink = "https://www.mix.gmu.edu/";
   final String mentorButtonLink = "https://www.mix.gmu.edu/";
@@ -49,7 +48,6 @@ class HomePage extends StatelessWidget {
                   style: TextStyle(
                     fontSize: wiphFontSize,
                     color: colorsHolder.patriotGold,
-                    fontWeight: FontWeight.w700,
                   ),
                 ),
               ),
@@ -58,14 +56,21 @@ class HomePage extends StatelessWidget {
                   top: 30,
                   bottom: 15,
                 ),
-                child: Text.rich(
-                  TextSpan(
+                child: RichText(
+                  text: TextSpan(
+                    style: TextStyle(
+                      fontFamily: fontHolder.paragraphFont,
+                      fontSize: wiphParagraphFontSize,
+                      color: colorsHolder.patriotGreen,
+                      height: 1.25
+                    ),
                     text: 'PatriotHacks is a collegiate hackathon that will be held entirely online due to the COVID-19 pandemic. For 14 days, students from across the world will be free to enjoy plenty of workshops, activities, and networking events, along with free swag (limited to participants in the US). PatriotHacks is a space for innovators to play, learn, break, and revolutionize technology, all while building their resume and making memories that will last a lifetime. The event is free, and no experience is required to attend. Join us in January 2021 for our',
                     children: <InlineSpan>[
                       TextSpan(
                         text: ' mini ',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
+                          fontFamily: fontHolder.paragraphFont,
                           color: colorsHolder.patriotGold
                         ),
                       ),
@@ -75,9 +80,8 @@ class HomePage extends StatelessWidget {
                     ],
                   ),
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                      fontSize: wiphParagraphFontSize,
-                      color: colorsHolder.patriotGreen
+                  strutStyle: StrutStyle(
+                    fontSize: wiphParagraphFontSize,
                   ),
                 ),
               ),
@@ -141,6 +145,7 @@ class HomePage extends StatelessWidget {
           txt,
           style: TextStyle(
             color: colorsHolder.patriotGreen,
+            fontFamily: fontHolder.paragraphFont,
           ),
         ),
       ),

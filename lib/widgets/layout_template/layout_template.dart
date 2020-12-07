@@ -23,7 +23,7 @@ class _LayoutTemplateState extends State<LayoutTemplate>
   void initState() {
     super.initState();
     _animationController = AnimationController(
-      duration: Duration(milliseconds: 750), //TODO: Set animation time
+      duration: Duration(milliseconds: 0), //TODO: Set animation time
       vsync: this,
     );
     _animate = Tween(begin: 0.0, end: 1.0).animate(new CurvedAnimation(
@@ -34,7 +34,7 @@ class _LayoutTemplateState extends State<LayoutTemplate>
   void _animateMethod() async {
     await Future.delayed(Duration(
         milliseconds:
-            1500)); //TODO: Set how long to wait before animation starts
+            0)); //TODO: Set how long to wait before animation starts
     _animationController.forward();
   }
 

@@ -8,4 +8,5 @@ void setupLocator() {
   locator.registerLazySingleton(() => NavigationService());
   locator.registerLazySingleton(() => ColorHolder());
   locator.registerLazySingleton(() => ImageHolder());
+  locator.registerLazySingleton(() => FontHolder());
 }

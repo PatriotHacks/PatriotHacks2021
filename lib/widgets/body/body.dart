@@ -7,6 +7,7 @@ import 'package:patriot_hacks/widgets/navigation_bar/navigation_bar.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class Body extends StatefulWidget {
+
   final Widget child;
   final double height;
 
