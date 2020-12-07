@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:footer/footer.dart';
 import 'package:footer/footer_view.dart';
-import 'package:get_it/get_it.dart';
 import 'package:patriot_hacks/widgets/centered_view/centered_view.dart';
 import 'package:patriot_hacks/widgets/footer/footer.dart';
 import 'package:patriot_hacks/widgets/navigation_bar/navigation_bar.dart';
@@ -11,7 +10,7 @@ class Body extends StatefulWidget {
   final Widget child;
   final double height;
 
-  Body({Key key, @required this.height, @required this.child}) : super(key: key);
+  Body({Key key, this.height, @required this.child}) : super(key: key);
 
   @override
   _BodyState createState() => _BodyState();
