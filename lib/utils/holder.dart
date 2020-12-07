@@ -14,8 +14,8 @@ class ColorHolder{
     this.patriotYellow = Color.fromRGBO(247, 205, 84, 1);
     this.patriotDarkGreen = HexColor("006633");
     this.patriotBlack = HexColor("060000");
-    this.patriotGreen = HexColor("FFCA5F");
-    this.patriotGold = HexColor("008037");
+    this.patriotGreen = HexColor("008037");
+    this.patriotGold = HexColor("FFCA5F");
   }
 
 }

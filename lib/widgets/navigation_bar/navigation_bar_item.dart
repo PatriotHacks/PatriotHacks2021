@@ -29,7 +29,7 @@ class NavigationBarItem extends StatelessWidget {
               padding: const EdgeInsets.only(top: 15.0, bottom: 15.0),
               child: Text(
                 title,
-                style: TextStyle(fontSize: 18, color: getIt<ColorHolder>().patriotGold),
+                style: TextStyle(fontSize: 18, color: getIt<ColorHolder>().patriotGreen),
               ),
             ),
           ),
