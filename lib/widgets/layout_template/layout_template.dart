@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
+import 'package:patriot_hacks/utils/holder.dart';
 import 'package:patriot_hacks/widgets/navigation_drawer/navigation_drawer.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
@@ -18,12 +19,11 @@ class _LayoutTemplateState extends State<LayoutTemplate>
   Animation _animate;
   AnimationController _animationController;
   final getIt = GetIt.instance;
-
   @override
   void initState() {
     super.initState();
     _animationController = AnimationController(
-      duration: Duration(milliseconds: 500), //TODO: Set animation time
+      duration: Duration(milliseconds: 750), //TODO: Set animation time
       vsync: this,
     );
     _animate = Tween(begin: 0.0, end: 1.0).animate(new CurvedAnimation(
@@ -34,7 +34,7 @@ class _LayoutTemplateState extends State<LayoutTemplate>
   void _animateMethod() async {
     await Future.delayed(Duration(
         milliseconds:
-            500)); //TODO: Set how long to wait before animation starts
+            1500)); //TODO: Set how long to wait before animation starts
     _animationController.forward();
   }
 
@@ -44,27 +44,11 @@ class _LayoutTemplateState extends State<LayoutTemplate>
       opacity: _animate,
       child: ResponsiveBuilder(
         builder: (context, sizingInformation) => Scaffold(
+          backgroundColor: getIt<ColorHolder>().patriotBlack,
           drawer: sizingInformation.isTablet || sizingInformation.isMobile
               ? NavigationDrawer()
               : null,
           body: widget.child,
-          // body: FooterView(
-          //   children: [
-          //     CenteredView(child: NavigationBar()),
-          //     CenteredView(
-          //       child: Expanded(child: widget.child),
-          //     )
-          //   ],
-          //   footer: Footer(
-          //     backgroundColor: Color.fromRGBO(0, 0, 0, 0),
-          //     child: CenteredView(
-          //       child: Container(
-          //         child: CustomFooter(),
-          //       ),
-          //     ),
-          //   ),
-          //   flex: 10,
-          // ),
         ),
       ),
     );

@@ -8,13 +8,17 @@ import 'home_page_mobile_tablet.dart';
 class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Body(
-      height: 700,
-      child: ScreenTypeLayout(
-        mobile: HomePageMobileTablet(),
-        tablet: HomePageMobileTablet(),
-        desktop: HomePageDesktop(),
-      ),
+    return Flex(
+      direction: Axis.vertical,
+      children: [Expanded(
+        child: Body(
+          child: ScreenTypeLayout(
+            mobile: HomePageMobileTablet(),
+            tablet: HomePageMobileTablet(),
+            desktop: HomePageDesktop(),
+          ),
+        ),
+      ),],
     );
   }
 }

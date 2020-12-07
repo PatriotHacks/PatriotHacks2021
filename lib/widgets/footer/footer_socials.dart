@@ -3,11 +3,14 @@ import 'package:flutter/material.dart';
 import 'dart:html' as html;
 
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:get_it/get_it.dart';
+import 'package:patriot_hacks/utils/holder.dart';
 
 class FooterSocials extends StatelessWidget {
   final String _twitter = 'https://twitter.com/patriothacks';
   final String _facebook = 'https://www.facebook.com/patriothacks/';
   final String _instagram = 'https://www.instagram.com/patriothacks/';
+  final GetIt getIt = GetIt.instance;
 
   @override
   Widget build(BuildContext context) {
@@ -17,6 +20,7 @@ class FooterSocials extends StatelessWidget {
           Text('Follow us', style: TextStyle(
             fontWeight: FontWeight.w600,
             fontSize: 20,
+            color: getIt<ColorHolder>().patriotGold,
           ),),
           SizedBox(height: 20,),
           Container(
@@ -27,9 +31,9 @@ class FooterSocials extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  FaIcon(FontAwesomeIcons.facebook),
+                  FaIcon(FontAwesomeIcons.facebook, color: getIt<ColorHolder>().patriotGold,),
                   SizedBox(width: 5,),
-                  Text('Facebook'),
+                  Text('Facebook', style: TextStyle(color: getIt<ColorHolder>().patriotGold,),),
                 ],
               ),
               onPressed: () {
@@ -45,9 +49,9 @@ class FooterSocials extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  FaIcon(FontAwesomeIcons.twitter),
+                  FaIcon(FontAwesomeIcons.twitter, color: getIt<ColorHolder>().patriotGold,),
                   SizedBox(width: 5,),
-                  Text('Twitter'),
+                  Text('Twitter',  style: TextStyle(color: getIt<ColorHolder>().patriotGold,)),
                 ],
               ),
               onPressed: () {
@@ -63,9 +67,9 @@ class FooterSocials extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  FaIcon(FontAwesomeIcons.instagram),
+                  FaIcon(FontAwesomeIcons.instagram, color: getIt<ColorHolder>().patriotGold,),
                   SizedBox(width: 5,),
-                  Text('Instagram'),
+                  Text('Instagram',  style: TextStyle(color: getIt<ColorHolder>().patriotGold,)),
                 ],
               ),
               onPressed: () {

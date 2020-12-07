@@ -1,16 +1,21 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:get_it/get_it.dart';
 import 'package:patriot_hacks/utils/hex_color.dart';
 
 class ColorHolder{
 
   var patriotYellow;
   var patriotDarkGreen;
+  var patriotBlack;
+  var patriotGreen;
+  var patriotGold;
 
   ColorHolder(){
     this.patriotYellow = Color.fromRGBO(247, 205, 84, 1);
     this.patriotDarkGreen = HexColor("006633");
+    this.patriotBlack = HexColor("060000");
+    this.patriotGreen = HexColor("FFCA5F");
+    this.patriotGold = HexColor("008037");
   }
 
 }

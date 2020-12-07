@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
 import 'package:patriot_hacks/services/navigation_service.dart';
+import 'package:patriot_hacks/utils/holder.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 import '../locator.dart';
+
+final GetIt getIt = GetIt.instance;
 
 class NavigationBarItem extends StatelessWidget {
 
@@ -25,7 +29,7 @@ class NavigationBarItem extends StatelessWidget {
               padding: const EdgeInsets.only(top: 15.0, bottom: 15.0),
               child: Text(
                 title,
-                style: TextStyle(fontSize: 18),
+                style: TextStyle(fontSize: 18, color: getIt<ColorHolder>().patriotGold),
               ),
             ),
           ),

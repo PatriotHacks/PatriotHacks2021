@@ -1,13 +1,16 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
 // ignore: avoid_web_libraries_in_flutter
 import 'dart:html' as html;
 
 import 'package:mailto/mailto.dart';
+import 'package:patriot_hacks/utils/holder.dart';
 
 
 class FooterContactUs extends StatelessWidget {
   final String _email = 'team@patriothacks.org';
+  final GetIt getIt = GetIt.instance;
 
   final mailtoLink = Mailto(
     to: ['team@patriothacks.org'],
@@ -24,6 +27,7 @@ class FooterContactUs extends StatelessWidget {
           Text('Contact us', style: TextStyle(
             fontWeight: FontWeight.w600,
             fontSize: 20,
+            color: getIt<ColorHolder>().patriotGold,
           ),),
           SizedBox(height: 20,),
           RichText(
@@ -32,7 +36,7 @@ class FooterContactUs extends StatelessWidget {
                 children: [
                   TextSpan(
                     text: 'For more information, email\n\n us at ',
-                    style: TextStyle(color: Colors.black),
+                    style: TextStyle(color: getIt<ColorHolder>().patriotGold,),
                   ),
                   TextSpan(
                       text: _email,
