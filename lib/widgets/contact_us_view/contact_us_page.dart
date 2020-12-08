@@ -59,8 +59,8 @@ class ContactUsPage extends StatelessWidget {
                       TextSpan(
                         text: 'For more information, email\n\n us at ',
                         style: TextStyle(
-                          color: getIt<ColorHolder>().patriotGreen,
-                          fontFamily: getIt<FontHolder>().paragraphFont,
+                          color: getIt.get<ColorHolder>().patriotGreen,
+                          fontFamily: getIt.get<FontHolder>().paragraphFont,
                         ),
                       ),
                       TextSpan(
@@ -68,7 +68,7 @@ class ContactUsPage extends StatelessWidget {
                           style: TextStyle(
                             color: getIt.get<ColorHolder>().patriotGold,
                             decoration: TextDecoration.underline,
-                            fontFamily: getIt<FontHolder>().paragraphFont,
+                            fontFamily: getIt.get<FontHolder>().paragraphFont,
                           ),
                           recognizer: TapGestureRecognizer()
                             ..onTap = () {
@@ -85,8 +85,8 @@ class ContactUsPage extends StatelessWidget {
                           text:
                               'Interested in becoming a sponsor? \n\n email us at ',
                           style: TextStyle(
-                            color: getIt<ColorHolder>().patriotGreen,
-                            fontFamily: getIt<FontHolder>().paragraphFont,
+                            color: getIt.get<ColorHolder>().patriotGreen,
+                            fontFamily: getIt.get<FontHolder>().paragraphFont,
                           ),
                         ),
                         TextSpan(
@@ -94,7 +94,7 @@ class ContactUsPage extends StatelessWidget {
                             style: TextStyle(
                               color: getIt.get<ColorHolder>().patriotGold,
                               decoration: TextDecoration.underline,
-                              fontFamily: getIt<FontHolder>().paragraphFont,
+                              fontFamily: getIt.get<FontHolder>().paragraphFont,
                             ),
                             recognizer: TapGestureRecognizer()
                               ..onTap = () {
@@ -104,7 +104,7 @@ class ContactUsPage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  // spaceBetweenCards,
+                  spaceBetweenCards,
                   // RichText(
                   //   textAlign: TextAlign.center,
                   //   text: TextSpan(

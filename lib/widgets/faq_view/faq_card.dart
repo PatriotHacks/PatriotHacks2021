@@ -23,20 +23,15 @@ class FAQCardState extends State<FAQCard> {
   @override
   Widget build(BuildContext context) {
 
-    return Expanded(
+    return Container(
+      width: 400,
+      padding: EdgeInsets.all(20),
       child: Container(
         decoration: BoxDecoration(
-          color: colorsHolder.patriotYellow,
-          borderRadius: BorderRadius.all(Radius.circular(15)),
-          border: Border(
-            top: BorderSide(width: 1),
-            bottom: BorderSide(width: 1),
-            left: BorderSide(width: 1),
-            right: BorderSide(width: 1),
-          ),
+          borderRadius: BorderRadius.circular(10),
+          color: ColorHolder().patriotGold,
         ),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
                 padding: EdgeInsets.all(20),

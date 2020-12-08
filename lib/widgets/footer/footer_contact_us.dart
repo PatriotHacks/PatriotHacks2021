@@ -28,7 +28,7 @@ class FooterContactUs extends StatelessWidget {
           Text('Contact us', style: TextStyle(
             fontWeight: FontWeight.w600,
             fontSize: 20,
-            color: getIt<ColorHolder>().patriotGreen,
+            color: ColorHolder().patriotGreen,
           ),),
           SizedBox(height: 20,),
           RichText(
@@ -38,13 +38,13 @@ class FooterContactUs extends StatelessWidget {
                   TextSpan(
                     text: 'For more information, email\n\n us at ',
                     style: TextStyle(
-                      color: getIt<ColorHolder>().patriotGreen,
-                      fontFamily: getIt<FontHolder>().paragraphFont,
+                      color: ColorHolder().patriotGreen,
+                      fontFamily: FontHolder().paragraphFont,
                     ),
                   ),
                   TextSpan(
                       text: _email,
-                      style: TextStyle(color: getIt.get<ColorHolder>().patriotGold, decoration: TextDecoration.underline, fontFamily: getIt<FontHolder>().paragraphFont,),
+                      style: TextStyle(color: ColorHolder().patriotGold, decoration: TextDecoration.underline, fontFamily: FontHolder().paragraphFont,),
                       recognizer: TapGestureRecognizer()
                         ..onTap = () {
                           html.window.open(mailtoLink.toString(), '_blank');
