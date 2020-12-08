@@ -10,7 +10,7 @@ import 'configure_nonweb.dart' if (dart.library.html) 'configure_web.dart';
 
 
 void main() {
-  //NOTE: This needs to be enabled in flutter master channel for the # to disappear in the URL. It stopped working on the beta channel so we either have to wait or switch to master channel
+    //NOTE: This needs to be enabled in flutter master channel for the # to disappear in the URL. It stopped working on the beta channel so we either have to wait or switch to master channel
   configureApp();
   setupLocator();
   runApp(Main());
