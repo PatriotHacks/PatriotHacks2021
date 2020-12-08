@@ -22,7 +22,7 @@ class NavigationDrawer extends StatelessWidget {
             DrawerItem('Home', HomeRoute),
             DrawerItem('Register', RegisterRoute),
             DrawerItem('Sponsors', SponsorsRoute),
-            DrawerItem('Discord', DiscordRoute),
+            // DrawerItem('Discord', DiscordRoute),
             DrawerItem('FAQ', FAQRoute),
             DrawerItem('Contact us', ContactUsRoute),
             SizedBox(height: 15,)

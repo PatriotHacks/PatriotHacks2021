@@ -48,9 +48,6 @@ dev_dependencies:
 flutter:
 
   fonts:
-    - family: Tifax
-      fonts:
-        - asset: fonts/Tifax.ttf
     - family: Modeseven
       fonts:
         - asset: fonts/Modeseven.ttf
