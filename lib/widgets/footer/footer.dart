@@ -4,9 +4,12 @@ import 'package:patriot_hacks/utils/holder.dart';
 import 'package:patriot_hacks/widgets/footer/footer_code_of_conduct.dart';
 import 'package:patriot_hacks/widgets/footer/footer_contact_us.dart';
 import 'package:patriot_hacks/widgets/footer/footer_socials.dart';
+import 'package:patriot_hacks/widgets/locator.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 final GetIt getIt = GetIt.instance;
+
+final ColorHolder colorHolder = locator<ColorHolder>();
 
 class CustomFooter extends StatelessWidget {
 
@@ -22,19 +25,19 @@ class CustomFooter extends StatelessWidget {
 }
 
 class _Desktop extends StatelessWidget {
-
+ 
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         Divider(
-          color: getIt<ColorHolder>().patriotGreen,
+          color: colorHolder.patriotGreen,
           height: 1,
           thickness: 1,
         ),
         SizedBox(
-          height: 20,
+          height: 40,
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -56,15 +59,14 @@ class _MobileTablet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisSize: MainAxisSize.min,
       children: [
         Divider(
-          color: getIt<ColorHolder>().patriotGreen,
+          color: colorHolder.patriotGreen,
           height: 1,
           thickness: 1,
         ),
         SizedBox(
-          height: 20,
+          height: 40,
         ),
         FooterSocials(),
         SizedBox(height: 20,),

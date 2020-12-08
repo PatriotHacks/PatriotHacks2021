@@ -21,7 +21,7 @@ class FooterSocials extends StatelessWidget {
           Text('Follow us', style: TextStyle(
             fontWeight: FontWeight.w600,
             fontSize: 20,
-            color: getIt<ColorHolder>().patriotGreen,
+            color: ColorHolder().patriotGreen,
           ),),
           SizedBox(height: 20,),
           Container(
@@ -32,9 +32,9 @@ class FooterSocials extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  FaIcon(FontAwesomeIcons.facebook, color: getIt<ColorHolder>().patriotGold,),
+                  FaIcon(FontAwesomeIcons.facebook, color: ColorHolder().patriotGold,),
                   SizedBox(width: 5,),
-                  Text('Facebook', style: TextStyle(color: getIt<ColorHolder>().patriotGold,fontFamily: getIt<FontHolder>().paragraphFont,),),
+                  Text('Facebook', style: TextStyle(color: ColorHolder().patriotGold,fontFamily: FontHolder().paragraphFont,),),
                 ],
               ),
               onPressed: () {
@@ -50,9 +50,9 @@ class FooterSocials extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  FaIcon(FontAwesomeIcons.twitter, color: getIt<ColorHolder>().patriotGold,),
+                  FaIcon(FontAwesomeIcons.twitter, color: ColorHolder().patriotGold,),
                   SizedBox(width: 5,),
-                  Text('Twitter',  style: TextStyle(color: getIt<ColorHolder>().patriotGold,fontFamily: getIt<FontHolder>().paragraphFont,)),
+                  Text('Twitter',  style: TextStyle(color: ColorHolder().patriotGold,fontFamily: FontHolder().paragraphFont,)),
                 ],
               ),
               onPressed: () {
@@ -68,9 +68,9 @@ class FooterSocials extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  FaIcon(FontAwesomeIcons.instagram, color: getIt<ColorHolder>().patriotGold,),
+                  FaIcon(FontAwesomeIcons.instagram, color: ColorHolder().patriotGold,),
                   SizedBox(width: 5,),
-                  Text('Instagram',  style: TextStyle(color: getIt<ColorHolder>().patriotGold,fontFamily: getIt<FontHolder>().paragraphFont,)),
+                  Text('Instagram',  style: TextStyle(color: ColorHolder().patriotGold,fontFamily: FontHolder().paragraphFont,)),
                 ],
               ),
               onPressed: () {

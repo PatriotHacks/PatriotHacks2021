@@ -19,7 +19,7 @@ class FooterCodeOfConduct extends StatelessWidget {
           Text('Code of conduct', style: TextStyle(
             fontWeight: FontWeight.w600,
             fontSize: 20,
-            color: getIt<ColorHolder>().patriotGreen,
+            color: ColorHolder().patriotGreen,
           ),),
           SizedBox(height: 20,),
           RichText(
@@ -28,11 +28,11 @@ class FooterCodeOfConduct extends StatelessWidget {
               children: [
                 TextSpan(
                   text: 'If you intend to participate in this\n\nevent you must agree to the\n\n',
-                  style: TextStyle(color: getIt<ColorHolder>().patriotGreen,fontFamily: getIt<FontHolder>().paragraphFont,),
+                  style: TextStyle(color: ColorHolder().patriotGreen,fontFamily: FontHolder().paragraphFont,),
                 ),
                 TextSpan(
                   text: 'George Mason Student Code of Conduct',
-                  style: TextStyle(color: getIt.get<ColorHolder>().patriotGold, decoration: TextDecoration.underline,fontFamily: getIt<FontHolder>().paragraphFont,),
+                  style: TextStyle(color: ColorHolder().patriotGold, decoration: TextDecoration.underline,fontFamily: FontHolder().paragraphFont,),
                   recognizer: TapGestureRecognizer()
                     ..onTap = () {
                       html.window.open(_codeOfConduct, '_blank');

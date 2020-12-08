@@ -33,8 +33,7 @@ class _BodyState extends State<Body> {
           backgroundColor: Color.fromRGBO(0, 0, 0, 0),
           child: CenteredView(
             child: Container(
-              padding: EdgeInsets.all(30.0),
-              height: sizingInformation.isDesktop ? 264 : 521,
+              height: sizingInformation.isDesktop ? 265 : 525,
               child: CustomFooter(),
             ),
           ),
