@@ -20,10 +20,7 @@ class Main extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      builder: (context, child) {
-        print(child.runtimeType);
-        return LayoutTemplate(child: child);
-      },
+      builder: (context, child) => LayoutTemplate(child: child),
       navigatorKey: locator<NavigationService>().navigatorKey,
       onGenerateRoute: generateRoute,
       initialRoute: HomeRoute,
