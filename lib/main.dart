@@ -15,8 +15,6 @@ void main() {
   runApp(Main());
 }
 
-final GetIt getIt = GetIt.instance;
-
 class Main extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -31,14 +29,14 @@ class Main extends StatelessWidget {
       theme: ThemeData(
         textTheme: TextTheme(
           bodyText1: TextStyle(
-            fontFamily: getIt.get<FontHolder>().paragraphFont,
+            fontFamily: locator<FontHolder>().paragraphFont,
           ),
           bodyText2: TextStyle(
-            fontFamily: getIt.get<FontHolder>().paragraphFont,
+            fontFamily: locator<FontHolder>().paragraphFont,
           ),
         ).apply(
-          bodyColor: getIt<ColorHolder>().patriotGreen,
-          displayColor: getIt<ColorHolder>().patriotGreen,
+          bodyColor: locator<ColorHolder>().patriotGreen,
+          displayColor: locator<ColorHolder>().patriotGreen,
         ),
       ),
     );
