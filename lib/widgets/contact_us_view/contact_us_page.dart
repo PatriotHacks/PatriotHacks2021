@@ -90,7 +90,7 @@ class ContactUsPage extends StatelessWidget {
                           ),
                         ),
                         TextSpan(
-                            text: _email,
+                            text: 'sponsor@patriothacks.org',
                             style: TextStyle(
                               color: getIt.get<ColorHolder>().patriotGold,
                               decoration: TextDecoration.underline,
