@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+      If you are serving your web app in a path other than the root, change the
+      href value below to reflect the base path you are serving from.
+
+      The path provided below has to start and end with a slash "/" in order for
+      it to work correctly.
+
+      Fore more details:
+      * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+    -->
+    <base href="/">
+
+    <meta charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="description" content="A new Flutter project.">
+
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="patriot_hacks">
+    <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png"/>
+
+    <title>patriot_hacks</title>
+    <link rel="manifest" href="manifest.json">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style type="text/css">
+        .glitch {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 15%;
+            opacity: 1;
+            z-index: 0;
+            background-color: black;
+        }
+        body {
+            background-color: black;
+        }
+    </style>
+
+    <script type="text/javascript">
+
+        !function (t, e, s, i) {
+            "use strict";
+
+            function n(e, s) {
+                this.element = e, this.settings = t.extend({}, a, s), this._defaults = a, this._name = r, this.init()
+            }
+
+            var r = "_Glitch", a = {
+                destroy: !1,
+                glitch: !0,
+                scale: !8,
+                blend: !0,
+                blendModeType: "hue",
+                glitch1TimeMin: 50,
+                glitch1TimeMax: 100,
+                glitch2TimeMin: 50,
+                glitch2TimeMax: 100,
+                zIndexStart: 0
+            };
+            t.extend(n.prototype, {
+                init: function () {
+                    this.glitch()
+                }, glitch: function () {
+
+                    function e(t, e) {
+                        return Math.floor(Math.random() * (e - t + 1)) + t
+                    }
+
+                    function s() {
+                        var i = e(100, 1000), n = 5000, a = e(100, 1000), o = 50, h = e(-100, 100), f = e(-100, 100), d = e(c, l);
+                        t(r).css({
+                            clip: "rect(" + i + "px, " + n + "px, " + a + "px," + o + "px)",
+                            right: f,
+                            left: h
+                        }), setTimeout(s, d)
+                    }
+
+                    function i() {
+                        var s = e(100, 1000), n = 5000, c = e(100, 1000), l = 50, f = e(-100, 100), d = e(-100, 100), m = e(o, h);
+                        if (a === !0) var x = (Math.random() * (1.1 - .9) + .9).toFixed(2); else if (a === !1) var x = 1;
+                        t(r).next().css({
+                            clip: "rect(" + s + "px, " + n + "px, " + c + "px," + l + "px)",
+                            left: f,
+                            right: d,
+                            "-webkit-transform": "scale(" + x + ")",
+                            "-ms-transform": "scale(" + x + ")",
+                            transform: "scale(" + x + ")"
+                        }), setTimeout(i, m)
+                    }
+
+                    function n() {
+                        var s = e(100, 1000), i = 5000, c = e(100, 1000), l = 50, f = e(-100, 100), d = e(-100, 100), m = e(o, h);
+                        if (a === !0) var x = (Math.random() * (1.1 - .9) + .9).toFixed(2); else if (a === !1) var x = 1;
+                        t(r).next().next().css({
+                            clip: "rect(" + s + "px, " + i + "px, " + c + "px," + l + "px)",
+                            left: f,
+                            right: d,
+                            "-webkit-transform": "scale(" + x + ")",
+                            "-ms-transform": "scale(" + x + ")",
+                            transform: "scale(" + x + ")"
+                        }), setTimeout(n, m)
+                    }
+
+                    var r = this.element, a = this.settings.scale, c = this.settings.glitch1TimeMin,
+                        l = this.settings.glitch1TimeMax, o = this.settings.glitch2TimeMin,
+                        h = this.settings.glitch2TimeMax, f = this.settings.zIndexStart;
+
+                    setTimeout(() => {
+
+
+                    if (this.settings.destroy === !0) (t(r).hasClass("el-front-1") || t(r).hasClass("front-3") || t(r).hasClass("front-2")) && t(".front-1, .front-2, .front-3").remove(), t(".back").removeClass("back"); else if (this.settings.destroy === !1) {
+                        var d = t(r).clone();
+                        if (d.insertBefore(r).addClass("back").css({"z-index": 0}), this.settings.blend === !0) {
+                            var d = t(r).clone();
+                            d.insertAfter(r).addClass("front-3").css({
+                                "z-index": 0,
+                                "mix-blend-mode": this.settings.blendModeType
+                            }), n()
+                        }
+                        if (this.settings.glitch === !0) {
+                            var d = t(r).clone();
+                            d.insertAfter(r).addClass("front-2").css({"z-index": 0}), t(".back").next().addClass("front-1").css({"z-index": 0}), s(), i()
+                        }
+                    }
+
+                    }, 1500);
+
+                }
+
+
+
+
+            }), t.fn[r] = function (t) {
+                return this.each(function () {
+                    new n(this, t)
+                })
+            }
+        }(jQuery, window, document);
+
+        $(function () {
+            $(".glitch")._Glitch({
+                destroy: !1,
+                glitch: !0,
+                scale: !0,
+                blend: !0,
+                blendModeType: "hue",
+                glitch1TimeMin: 100,
+                glitch1TimeMax: 200,
+                glitch2TimeMin: 50,
+                glitch2TimeMax: 100
+            })
+        });
+    </script>
+    <base href="/">
+</head>
+<body id="app-container">
+<!-- This script installs service_worker.js to provide PWA functionality to
+     application. For more information, see:
+     https://developers.google.com/web/fundamentals/primers/service-workers -->
+<div class="glitch" style="background-image: url('assets/assets/patriot_hacks_without_border.png')">
+</div>
+
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('flutter-first-frame', function () {
+            navigator.serviceWorker.register('flutter_service_worker.js?v=2146747123');
+        });
+    }
+</script>
+
+
+<script src="main.dart.js" type="application/javascript"></script>
+
+
+</body>
+</html>
