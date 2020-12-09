@@ -86,7 +86,7 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               verticalSpace(15),
-              homePageButton("Registration", RegisterRoute, context),
+              homePageButton("Register", RegisterRoute, context),
               verticalSpace(10),
               // homePageButton("Mentor", mentorButtonLink),
               // verticalSpace(10),
