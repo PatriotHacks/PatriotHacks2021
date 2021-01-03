@@ -18,14 +18,12 @@ class ContactUsPage extends StatelessWidget {
     to: ['team@patriothacks.org'],
     cc: ['\n\n\n', null, ''],
     subject: 'new lines in subject \n FTW',
-    validate: MailtoValidate.never,
   );
 
   final mailtoLink2 = Mailto(
     to: ['sponsor@patriothacks.org'],
     cc: ['\n\n\n', null, ''],
     subject: 'new lines in subject \n FTW',
-    validate: MailtoValidate.never,
   );
 
   @override
