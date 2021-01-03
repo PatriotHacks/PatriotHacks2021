@@ -85,12 +85,17 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
-              verticalSpace(15),
+              verticalSpace(20),
               homePageButton("Register", RegisterRoute, context),
               verticalSpace(10),
               // homePageButton("Mentor", mentorButtonLink),
               // verticalSpace(10),
               homePageButton("Sponsor", SponsorsRoute, context),
+              SizedBox(
+                child: imagesHolder.schedule,
+                height: sizingInformation.isMobile ? 450 : 700,
+                width: sizingInformation.isMobile ? 450 : 700,
+              )
             ],
           ),
         );
