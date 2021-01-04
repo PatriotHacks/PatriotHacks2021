@@ -22,11 +22,12 @@ class ColorHolder{
 
 class ImageHolder{
 
-  var patriotLogo, schedule;
+  var patriotLogo, schedule, error;
 
   ImageHolder(){
     this.patriotLogo = Image.asset('assets/patriot_hacks_without_border.png');
     this.schedule = Image.asset('schedule.png');
+    this.error = Image.asset('error.png');
   }
 
 }
