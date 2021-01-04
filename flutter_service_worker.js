@@ -12,6 +12,7 @@ const RESOURCES = {
 "assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "831eb40a2d76095849ba4aecd4340f19",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "a126c025bab9a1b4d8ac5534af76a208",
 "assets/NOTICES": "0962898bc2e33582f8358bccfd9b28bd",
+"assets/assets/error.png": "c589ae420dab95124dfa439f8756f454",
 "assets/assets/patriot_hacks_with_border.png": "91643c2647ff1f884fdbe5b512400213",
 "assets/assets/battele.png": "2d846ca83a389121180e574f2cb7440c",
 "assets/assets/schedule.png": "0534d24d51a2bac487710baeb1cd58cf",
@@ -23,14 +24,14 @@ const RESOURCES = {
 "assets/assets/patriothackslogo.png": "c7ace84f2ee943d65db52a200b184af4",
 "assets/assets/accurture.png": "9fe43a946f451d9dec10305680da3da6",
 "assets/assets/caci.png": "f0f0234c4eb5cbb62f37103fe254894b",
-"assets/AssetManifest.json": "869a500ec290f177ad8bc88ea41a31c8",
+"assets/AssetManifest.json": "daa812717dd658ea32388f4c7cc00939",
 "assets/FontManifest.json": "6269fae5306b5fe20a77bc9f138894a0",
 "assets/fonts/Modeseven.ttf": "a0cb693c715aaf804e67963c4d0d4d90",
 "assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
-"index.html": "f6069f4bb85fb53ae1c84c23832d7cc3",
-"/": "f6069f4bb85fb53ae1c84c23832d7cc3",
+"index.html": "f25e25c23dfce6dcc7e3ee8d141d1bd3",
+"/": "f25e25c23dfce6dcc7e3ee8d141d1bd3",
 "version.json": "b2238f5dca1fe30b64659b372df25202",
-"main.dart.js": "7561b9d8d73c48847676c7d7bb011299",
+"main.dart.js": "4d6e9b80c96fc1fe5b9b0199871922a8",
 "favicon.png": "43e30d48e2db826eb34c3c70fb5f0901"
 };
 
