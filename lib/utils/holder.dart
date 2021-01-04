@@ -26,8 +26,8 @@ class ImageHolder{
 
   ImageHolder(){
     this.patriotLogo = Image.asset('assets/patriot_hacks_without_border.png');
-    this.schedule = Image.asset('schedule.png');
-    this.error = Image.asset('error.png');
+    this.schedule = Image.asset('assets/schedule.png');
+    this.error = Image.asset('assets/error.png');
   }
 
 }
