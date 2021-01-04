@@ -1,13 +1,14 @@
 // ignore: avoid_web_libraries_in_flutter
 
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:patriot_hacks/utils/holder.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 
 class FooterContactUs extends StatelessWidget {
 
-  final String _email = 'team@patriothacks.org';
   final GetIt getIt = GetIt.instance;
 
   @override
@@ -33,8 +34,15 @@ class FooterContactUs extends StatelessWidget {
                     ),
                   ),
                   TextSpan(
-                      text: _email,
-                      style: TextStyle(color: ColorHolder().patriotGold, decoration: TextDecoration.underline, fontFamily: FontHolder().paragraphFont,),
+                      text: 'team@patriothacks.org',
+                      style: TextStyle(
+                        color: ColorHolder().patriotGold,
+                        decoration: TextDecoration.underline,
+                        fontFamily: FontHolder().paragraphFont,
+                      ),
+                    recognizer: TapGestureRecognizer()..onTap = () async {
+                        await launch('mailto:team@patriothacks.org');
+                    }
                   )
                 ]
             ),

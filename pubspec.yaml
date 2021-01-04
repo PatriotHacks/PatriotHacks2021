@@ -35,7 +35,7 @@ dependencies:
   get_it: ^5.0.1
   footer: ^0.0.3
   font_awesome_flutter: ^8.10.0
-  mailto: ^1.0.0
+  url_launcher: ^5.7.10
 
 dev_dependencies:
   flutter_test:
