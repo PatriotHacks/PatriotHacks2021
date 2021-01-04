@@ -2,10 +2,8 @@
 import 'dart:html' as html;
 
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-import 'package:mailto/mailto.dart';
 import 'package:patriot_hacks/utils/holder.dart';
 
 class ContactUsPage extends StatelessWidget {
@@ -14,17 +12,6 @@ class ContactUsPage extends StatelessWidget {
   final GetIt getIt = GetIt.instance;
   final String _email = 'team@patriothacks.org';
 
-  final mailtoLink = Mailto(
-    to: ['team@patriothacks.org'],
-    cc: ['\n\n\n', null, ''],
-    subject: 'new lines in subject \n FTW',
-  );
-
-  final mailtoLink2 = Mailto(
-    to: ['sponsor@patriothacks.org'],
-    cc: ['\n\n\n', null, ''],
-    subject: 'new lines in subject \n FTW',
-  );
 
   @override
   Widget build(BuildContext context) {
@@ -68,10 +55,7 @@ class ContactUsPage extends StatelessWidget {
                             decoration: TextDecoration.underline,
                             fontFamily: getIt.get<FontHolder>().paragraphFont,
                           ),
-                          recognizer: TapGestureRecognizer()
-                            ..onTap = () {
-                              html.window.open(mailtoLink.toString(), '_blank');
-                            })
+                        )
                     ]),
                   ),
                   spaceBetweenCards,
@@ -94,11 +78,7 @@ class ContactUsPage extends StatelessWidget {
                               decoration: TextDecoration.underline,
                               fontFamily: getIt.get<FontHolder>().paragraphFont,
                             ),
-                            recognizer: TapGestureRecognizer()
-                              ..onTap = () {
-                                html.window
-                                    .open(mailtoLink2.toString(), '_blank');
-                              })
+                           )
                       ],
                     ),
                   ),
