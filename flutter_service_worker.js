@@ -11,7 +11,7 @@ const RESOURCES = {
 "assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf": "d80ca32233940ebadc5ae5372ccd67f9",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "831eb40a2d76095849ba4aecd4340f19",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "a126c025bab9a1b4d8ac5534af76a208",
-"assets/NOTICES": "0962898bc2e33582f8358bccfd9b28bd",
+"assets/NOTICES": "5358a07b30852701ef30c93a6b404ebc",
 "assets/assets/error.png": "c589ae420dab95124dfa439f8756f454",
 "assets/assets/patriot_hacks_with_border.png": "91643c2647ff1f884fdbe5b512400213",
 "assets/assets/battele.png": "2d846ca83a389121180e574f2cb7440c",
@@ -28,10 +28,10 @@ const RESOURCES = {
 "assets/FontManifest.json": "6269fae5306b5fe20a77bc9f138894a0",
 "assets/fonts/Modeseven.ttf": "a0cb693c715aaf804e67963c4d0d4d90",
 "assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
-"index.html": "56abb189d548294083108ddccd98c15b",
-"/": "56abb189d548294083108ddccd98c15b",
+"index.html": "ea78edba98c3c197b1a02c6e6685c4d4",
+"/": "ea78edba98c3c197b1a02c6e6685c4d4",
 "version.json": "b2238f5dca1fe30b64659b372df25202",
-"main.dart.js": "28771ca729897cc886a4815c6b4f5283",
+"main.dart.js": "458ae17c589cbd436e8be10cb533bcb2",
 "favicon.png": "43e30d48e2db826eb34c3c70fb5f0901"
 };
 
