@@ -50242,8 +50242,8 @@ $S:309}
 F.a_j.prototype={
 $0:function(){var s=new B.lY()
 s.a=U.fE("assets/patriot_hacks_without_border.png")
-s.b=U.fE("schedule.png")
-s.c=U.fE("error.png")
+s.b=U.fE("assets/schedule.png")
+s.c=U.fE("assets/error.png")
 return s},
 $C:"$0",
 $R:0,
