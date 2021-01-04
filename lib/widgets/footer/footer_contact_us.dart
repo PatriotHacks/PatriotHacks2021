@@ -1,10 +1,7 @@
 // ignore: avoid_web_libraries_in_flutter
-import 'dart:html' as html;
 
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-import 'package:mailto/mailto.dart';
 import 'package:patriot_hacks/utils/holder.dart';
 
 
@@ -12,13 +9,6 @@ class FooterContactUs extends StatelessWidget {
 
   final String _email = 'team@patriothacks.org';
   final GetIt getIt = GetIt.instance;
-
-  final mailtoLink = Mailto(
-    to: ['team@patriothacks.org'],
-    cc: ['\n\n\n', null, ''],
-    subject: 'new lines in subject \n FTW',
-    validate: MailtoValidate.never,
-  );
 
   @override
   Widget build(BuildContext context) {
@@ -45,10 +35,6 @@ class FooterContactUs extends StatelessWidget {
                   TextSpan(
                       text: _email,
                       style: TextStyle(color: ColorHolder().patriotGold, decoration: TextDecoration.underline, fontFamily: FontHolder().paragraphFont,),
-                      recognizer: TapGestureRecognizer()
-                        ..onTap = () {
-                          html.window.open(mailtoLink.toString(), '_blank');
-                        }
                   )
                 ]
             ),
