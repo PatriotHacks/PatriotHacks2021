@@ -54,33 +54,4 @@ class ErrorView extends StatelessWidget {
         }
     );
   }
-//    return Body(
-//      height: 500,
-//      child: Center(
-//        child: ResponsiveBuilder(
-//          builder: (context, sizingInformation) => RichText(
-//            text: TextSpan(
-//              children: [
-//                TextSpan(
-//                  text: '404\n',
-//                  style: TextStyle(
-//                    fontWeight: FontWeight.w800,
-//                    fontSize: sizingInformation.isMobile ? 100 : 160,
-//                    color: Colors.black,
-//                  )
-//                ),
-//                TextSpan(
-//                  text: 'Page not found!',
-//                  style: TextStyle(
-//                    fontWeight: FontWeight.w400,
-//                    fontSize: sizingInformation.isMobile ? 30 : 48,
-//                    color: Colors.black,
-//                  )
-//                )
-//              ]
-//            ),
-//          )
-//        ),
-//      ),
-//    );
-  }
+}
