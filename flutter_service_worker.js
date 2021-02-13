@@ -3,36 +3,36 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "favicon1.png": "5dcef449791fa27946b3d35ad8803796",
-"icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
+  "main.dart.js": "bf218e4cede42946a0efcfb5b3eba995",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
-"manifest.json": "28366a967479e7dedce1a82094b5d111",
-"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
+"icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
+"favicon1.png": "5dcef449791fa27946b3d35ad8803796",
+"assets/NOTICES": "05e17826e0b7677747fa5140e424b5a1",
+"assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
+"assets/fonts/Modeseven.ttf": "a0cb693c715aaf804e67963c4d0d4d90",
+"assets/FontManifest.json": "6269fae5306b5fe20a77bc9f138894a0",
+"assets/AssetManifest.json": "daa812717dd658ea32388f4c7cc00939",
+"assets/assets/battele.png": "2d846ca83a389121180e574f2cb7440c",
+"assets/assets/patriot_hacks_without_border.png": "fd0ec8ea7a329eadbd785581761217dd",
+"assets/assets/logo-2018-hi-res-green.png": "77f6b308c6764fc5fdb01984b6cc2886",
+"assets/assets/caci.png": "f0f0234c4eb5cbb62f37103fe254894b",
+"assets/assets/accurture.png": "9fe43a946f451d9dec10305680da3da6",
+"assets/assets/informedxp.png": "414c64c8522fb02a7a134b57221809ac",
+"assets/assets/schedule.png": "0534d24d51a2bac487710baeb1cd58cf",
+"assets/assets/costar.png": "3bbd76b0900172f1971e28c37ed71459",
+"assets/assets/patriothackslogo.png": "c7ace84f2ee943d65db52a200b184af4",
+"assets/assets/patriot_hacks_with_border.png": "91643c2647ff1f884fdbe5b512400213",
+"assets/assets/error.png": "c589ae420dab95124dfa439f8756f454",
+"assets/assets/gdit.png": "33e738a1ac91d7f929fc496ddf60eadf",
+"assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "a126c025bab9a1b4d8ac5534af76a208",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf": "d80ca32233940ebadc5ae5372ccd67f9",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "831eb40a2d76095849ba4aecd4340f19",
-"assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "a126c025bab9a1b4d8ac5534af76a208",
-"assets/NOTICES": "5358a07b30852701ef30c93a6b404ebc",
-"assets/assets/error.png": "c589ae420dab95124dfa439f8756f454",
-"assets/assets/patriot_hacks_with_border.png": "91643c2647ff1f884fdbe5b512400213",
-"assets/assets/battele.png": "2d846ca83a389121180e574f2cb7440c",
-"assets/assets/schedule.png": "0534d24d51a2bac487710baeb1cd58cf",
-"assets/assets/informedxp.png": "414c64c8522fb02a7a134b57221809ac",
-"assets/assets/patriot_hacks_without_border.png": "fd0ec8ea7a329eadbd785581761217dd",
-"assets/assets/costar.png": "3bbd76b0900172f1971e28c37ed71459",
-"assets/assets/gdit.png": "33e738a1ac91d7f929fc496ddf60eadf",
-"assets/assets/logo-2018-hi-res-green.png": "77f6b308c6764fc5fdb01984b6cc2886",
-"assets/assets/patriothackslogo.png": "c7ace84f2ee943d65db52a200b184af4",
-"assets/assets/accurture.png": "9fe43a946f451d9dec10305680da3da6",
-"assets/assets/caci.png": "f0f0234c4eb5cbb62f37103fe254894b",
-"assets/AssetManifest.json": "daa812717dd658ea32388f4c7cc00939",
-"assets/FontManifest.json": "6269fae5306b5fe20a77bc9f138894a0",
-"assets/fonts/Modeseven.ttf": "a0cb693c715aaf804e67963c4d0d4d90",
-"assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
-"index.html": "ea78edba98c3c197b1a02c6e6685c4d4",
-"/": "ea78edba98c3c197b1a02c6e6685c4d4",
+"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "version.json": "b2238f5dca1fe30b64659b372df25202",
-"main.dart.js": "458ae17c589cbd436e8be10cb533bcb2",
-"favicon.png": "43e30d48e2db826eb34c3c70fb5f0901"
+"manifest.json": "28366a967479e7dedce1a82094b5d111",
+"favicon.png": "43e30d48e2db826eb34c3c70fb5f0901",
+"index.html": "7d78898c3a18cbe80847907bc2364641",
+"/": "7d78898c3a18cbe80847907bc2364641"
 };
 
 // The application shell files that are downloaded before a service worker can
@@ -176,7 +176,7 @@ async function downloadOffline() {
     }
     currentContent[key] = true;
   }
-  for (var resourceKey in Object.keys(RESOURCES)) {
+  for (var resourceKey of Object.keys(RESOURCES)) {
     if (!currentContent[resourceKey]) {
       resources.push(resourceKey);
     }
