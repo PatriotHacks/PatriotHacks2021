@@ -77,8 +77,8 @@ class HomePage extends StatelessWidget {
                       TextSpan(
                         text: 'hackathon and start off your new year right!'
                       )
-                    ],
-                  ), */
+                    ], */
+                  ),
                   textAlign: TextAlign.center,
                   strutStyle: StrutStyle(
                     fontSize: wiphParagraphFontSize,
@@ -91,11 +91,11 @@ class HomePage extends StatelessWidget {
               // homePageButton("Mentor", mentorButtonLink),
               // verticalSpace(10),
               homePageButton("Sponsor", SponsorsRoute, context),
-              SizedBox(
+              /* SizedBox(
                 child: imagesHolder.schedule,
                 height: sizingInformation.isMobile ? 450 : 700,
                 width: sizingInformation.isMobile ? 450 : 700,
-              )
+              ) */
             ],
           ),
         );
