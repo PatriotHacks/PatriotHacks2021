@@ -11,6 +11,7 @@ class FooterSocials extends StatelessWidget {
   final String _twitter = 'https://twitter.com/patriothacks';
   final String _facebook = 'https://www.facebook.com/patriothacks/';
   final String _instagram = 'https://www.instagram.com/patriothacks/';
+  final String _linkedin = 'https://www.linkedin.com/company/patriothacks/';
   final GetIt getIt = GetIt.instance;
 
   @override
@@ -75,6 +76,24 @@ class FooterSocials extends StatelessWidget {
               ),
               onPressed: () {
                 html.window.open(_instagram, '_blank');
+              },
+            ),
+          ),
+          Container(
+            padding: EdgeInsets.all(2),
+            width: 125,
+            height: 45,
+            child: FlatButton(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  FaIcon(FontAwesomeIcons.linkedin, color: ColorHolder().patriotGold,),
+                  SizedBox(width: 5,),
+                  Text('LinkedIn',  style: TextStyle(color: ColorHolder().patriotGold,fontFamily: FontHolder().paragraphFont,)),
+                ],
+              ),
+              onPressed: () {
+                html.window.open(_linkedin, '_blank');
               },
             ),
           ),
