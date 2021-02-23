@@ -54505,7 +54505,7 @@ D.CV.prototype={
 F:function(a,b){var s,r=null,q=new D.rd(r)
 q.c=800
 q.d=600
-q.e="https://form.typeform.com/to/RvTX5VYm?typeform-medium=embed-snippet"
+q.e="https://patriothacks.typeform.com/to/CRe7nesT"
 s=t.t
 return T.P5(H.b([T.qM(new O.dU(T.dW(T.dj(H.b([q],s),C.N,C.O,C.G),r,r),r,r),1)],s),C.N,C.k,r,C.O,C.G,r,r,C.bn)}}
 D.rd.prototype={

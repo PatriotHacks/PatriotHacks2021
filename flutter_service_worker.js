@@ -26,11 +26,11 @@ const RESOURCES = {
 "assets/FontManifest.json": "6269fae5306b5fe20a77bc9f138894a0",
 "version.json": "b2238f5dca1fe30b64659b372df25202",
 "manifest.json": "28366a967479e7dedce1a82094b5d111",
-"index.html": "f2ca58c139b26c0fd8e16b35489bdb16",
-"/": "f2ca58c139b26c0fd8e16b35489bdb16",
+"index.html": "1f842b645ff8fc0831a3c9f0c05b73ae",
+"/": "1f842b645ff8fc0831a3c9f0c05b73ae",
 "favicon.png": "43e30d48e2db826eb34c3c70fb5f0901",
 "favicon1.png": "5dcef449791fa27946b3d35ad8803796",
-"main.dart.js": "1658442e175a649d561a130f2a31614a",
+"main.dart.js": "503b1a1664a22ef983d102d300cbf4e3",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1"
 };
