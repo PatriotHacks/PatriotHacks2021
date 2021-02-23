@@ -10,7 +10,7 @@ final GetIt getIt = GetIt.instance;
 
 class RegisterView extends StatelessWidget {
 
-  final _registerFormSrc = 'https://form.typeform.com/to/RvTX5VYm?typeform-medium=embed-snippet';
+  final _registerFormSrc = 'https://patriothacks.typeform.com/to/CRe7nesT';
 
   @override
   Widget build(BuildContext context) {

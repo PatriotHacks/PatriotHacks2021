@@ -18,10 +18,6 @@ class HomePage extends StatelessWidget {
   final ImageHolder imagesHolder = GetIt.instance.get<ImageHolder>();
   final FontHolder fontHolder = GetIt.instance.get<FontHolder>();
 
-  final String registrationButtonLink = "https://www.mix.gmu.edu/";
-  final String mentorButtonLink = "https://www.mix.gmu.edu/";
-  final String sponsorButtonLink = "https://www.mix.gmu.edu/";
-
   @override
   Widget build(BuildContext context) {
     return ResponsiveBuilder(
