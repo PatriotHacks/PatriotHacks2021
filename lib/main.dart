@@ -24,6 +24,7 @@ class Main extends StatelessWidget {
       navigatorKey: locator<NavigationService>().navigatorKey,
       onGenerateRoute: generateRoute,
       initialRoute: HomeRoute,
+      title: "PatriotHacks",
       theme: ThemeData(
         textTheme: TextTheme(
           bodyText1: TextStyle(
