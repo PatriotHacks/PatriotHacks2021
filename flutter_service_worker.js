@@ -27,9 +27,9 @@ const RESOURCES = {
 "assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf": "dffd9504fcb1894620fa41c700172994",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "00bb2b684be61e89d1bc7d75dee30b58",
 "assets/FontManifest.json": "6269fae5306b5fe20a77bc9f138894a0",
-"index.html": "c4ede6181a8d6b581489c34af009783b",
-"/": "c4ede6181a8d6b581489c34af009783b",
-"main.dart.js": "64f70edf591a83f1bf5d42cd5776e5af",
+"index.html": "5c02b961d172c03fc4538e144f2bdd26",
+"/": "5c02b961d172c03fc4538e144f2bdd26",
+"main.dart.js": "f39a8b32461689ab5955a780ef3dcf15",
 "favicon1.png": "5dcef449791fa27946b3d35ad8803796",
 "version.json": "b2238f5dca1fe30b64659b372df25202",
 "favicon.png": "43e30d48e2db826eb34c3c70fb5f0901"
