@@ -60,7 +60,7 @@ class HomePage extends StatelessWidget {
                       color: colorsHolder.patriotGreen,
                       height: 1.25
                     ),
-                    text: 'PatriotHacks is the flagship hackathon at George Mason University where innovators can play, learn, create, game, and revolutionize technology. This year\'s hackathon is entirely online due to the COVID-19 pandemic. Students from across the world can enjoy plenty of workshops, activities, and networking events along with free swag. This provides hackers an opportunity to build their resumes and making memories that will last a lifetime. The event is entirely free, and no experience is required to attend. Join us from April 9th - April 11th, 2021.',
+                    text: 'PatriotHacks is the flagship hackathon at George Mason University where innovators can play, learn, create, game, and revolutionize technology. This year\'s hackathon is entirely online due to the COVID-19 pandemic. Students from across the world can enjoy plenty of workshops, activities, and networking events along with free swag. This provides hackers an opportunity to build their resumes and making memories that will last a lifetime. The event is entirely free, and no experience is required to attend. Join us from April 16th - April 18th, 2021.',
                     /* children: <InlineSpan>[
                       TextSpan(
                         text: ' mini ',
