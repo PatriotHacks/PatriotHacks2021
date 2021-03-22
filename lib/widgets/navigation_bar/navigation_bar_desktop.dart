@@ -25,10 +25,10 @@ class NavigationBarDesktop extends StatelessWidget {
               SizedBox(
                 width: 20,
               ),
-              NavigationBarItem('Sponsors', SponsorsRoute),
-              SizedBox(
-                width: 20,
-              ),
+              // NavigationBarItem('Sponsors', SponsorsRoute),
+              // SizedBox(
+              //   width: 20,
+              // ),
               // NavigationBarItem('Discord', DiscordRoute),
               // SizedBox(
               //   width: 20,
