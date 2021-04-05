@@ -6,7 +6,7 @@ import 'package:patriot_hacks/utils/holder.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class HomePage extends StatelessWidget {
-  
+
   final double titleFontSize = 30;
   final double subTitleFontSize = 20;
 
@@ -86,7 +86,7 @@ class HomePage extends StatelessWidget {
               verticalSpace(10),
               // homePageButton("Mentor", mentorButtonLink),
               // verticalSpace(10),
-              homePageButton("Sponsor", SponsorsRoute, context),
+              // homePageButton("Sponsor", SponsorsRoute, context),
               /* SizedBox(
                 child: imagesHolder.schedule,
                 height: sizingInformation.isMobile ? 450 : 700,
