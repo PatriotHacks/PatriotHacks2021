@@ -39,7 +39,7 @@ class FAQPageDesktop extends StatelessWidget{
                 padding: EdgeInsets.all(20),
                 child: Wrap(
                   children: [
-                    FAQCard("Do I need to be a student to attend?", "Students in high school, or students who are currently enrolled at a college/university or have graduated within the past 12 months are eligible to attend. All disciplines are welcome! If you are not a high schooler, college student, or recent graduate , you may be able to participate as a mentor or volunteer."),
+                    FAQCard("Do I need to be a student to attend?", "Students who are currently enrolled in, or recently graduated (within the past 12 months) from a college/university are eligible to attend. All disciplines are welcome! If you are not a college student or recent graduate, you may be able to participate as a mentor or volunteer."),
                     FAQCard("What should I bring?", "Bring whatever you like!"),
                     FAQCard("Can anyone mentor?", "Of course! Whether you're an experienced student or a working professional, you are welcome to register as a mentor to help students debug or to host a workshop."),
                     FAQCard("Are hardware hacks allowed?", "Because of the COVID-19 pandemic, we may offer this option in some alternative format. For now, you may refer to a MLH's Hardware Lab for more information on getting hardware for your hacks."),
