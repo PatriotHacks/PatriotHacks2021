@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:patriot_hacks/utils/holder.dart';
 import 'package:patriot_hacks/widgets/navigation_drawer/navigation_drawer.dart';
+import 'package:pointer_interceptor/pointer_interceptor.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class LayoutTemplate extends StatefulWidget {
@@ -46,9 +47,11 @@ class _LayoutTemplateState extends State<LayoutTemplate>
       child: ResponsiveBuilder(
         builder: (context, sizingInformation) => Scaffold(
           backgroundColor: _colorHolder.patriotBlack,
-          drawer: sizingInformation.isTablet || sizingInformation.isMobile
-              ? NavigationDrawer()
-              : null,
+          drawer: PointerInterceptor(
+            child: sizingInformation.isTablet || sizingInformation.isMobile
+                ? NavigationDrawer()
+                : null,
+          ),
           body: widget.child,
         ),
       ),

@@ -86,7 +86,7 @@ class HomePage extends StatelessWidget {
               verticalSpace(10),
               // homePageButton("Mentor", mentorButtonLink),
               // verticalSpace(10),
-              // homePageButton("Sponsor", SponsorsRoute, context),
+              // homePageButton("Our sponsors!", SponsorsRoute, context),
               /* SizedBox(
                 child: imagesHolder.schedule,
                 height: sizingInformation.isMobile ? 450 : 700,

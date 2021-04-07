@@ -32,6 +32,18 @@ class ImageHolder{
 
 }
 
+class SponsorImageHolder{
+  var cyai, wnv, fceda, fdm;
+
+  SponsorImageHolder() {
+    this.cyai = Image.asset('assets/CYAI_Logo_purple_block_with_URL.png');
+    this.wnv = Image.asset('assets/FCEDA_Talent_Logo_Update_V2.png');
+    this.fceda = Image.asset('assets/FCEDALogo.png');
+    this.fdm = Image.asset('assets/fdm-logo-white.png');
+  }
+
+}
+
 class FontHolder{
 
   // the header one does not fucking work
