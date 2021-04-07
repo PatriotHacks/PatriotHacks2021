@@ -30,7 +30,7 @@ class SponsorsMobile extends StatelessWidget {
                 Wrap(
                   children: [
                     SizedBox(
-                      height: 10,
+                      height: 0,
                       width: 95,
                     ),
                     Container(
@@ -40,7 +40,7 @@ class SponsorsMobile extends StatelessWidget {
                       // padding: EdgeInsets.only(left: 95, right: 95),
                     ),
                     SizedBox(
-                      height: 10,
+                      height: 0,
                       width: 95,
                     ),
                   ],
@@ -48,36 +48,36 @@ class SponsorsMobile extends StatelessWidget {
                 Wrap(
                   children: [
                     SizedBox(
-                      height: 20,
+                      height: 0,
                       width: 20,
                     ),
                     Container(
-                      height: 175,
+                      height: 145,
                       width: 350,
                       child: sponsorImageHolder.fdm,
                       padding: rowSpacing,
                     ),
                     SizedBox(
-                      height: 20,
+                      height: 0,
                       width: 20,
                     ),
                     Container(
-                      height: 175,
+                      height: 145,
                       width: 350,
                       child: sponsorImageHolder.cyai,
                       padding: rowSpacing,
                     ),
                     SizedBox(
-                      height: 20,
+                      height: 0,
                       width: 20,
                     ),
                     Container(
-                      height: 175,
+                      height: 145,
                       width: 350,
                       child: sponsorImageHolder.wnv,
                     ),
                     SizedBox(
-                      height: 20,
+                      height: 0,
                       width: 20,
                     ),
                     // Container(
