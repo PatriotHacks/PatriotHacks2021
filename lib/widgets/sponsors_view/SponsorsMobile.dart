@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:patriot_hacks/utils/holder.dart';
-
-class SponsorsDesktop extends StatelessWidget {
+class SponsorsMobile extends StatelessWidget {
   final EdgeInsets rowSpacing = EdgeInsets.only(top: 30, bottom: 30);
   final SizedBox spaceBetweenCards = SizedBox(width: 100);
   final SponsorImageHolder sponsorImageHolder = new SponsorImageHolder();
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -30,7 +30,7 @@ class SponsorsDesktop extends StatelessWidget {
                 Wrap(
                   children: [
                     SizedBox(
-                      height: 275,
+                      height: 10,
                       width: 95,
                     ),
                     Container(
@@ -40,7 +40,7 @@ class SponsorsDesktop extends StatelessWidget {
                       // padding: EdgeInsets.only(left: 95, right: 95),
                     ),
                     SizedBox(
-                      height: 275,
+                      height: 10,
                       width: 95,
                     ),
                   ],
@@ -52,17 +52,17 @@ class SponsorsDesktop extends StatelessWidget {
                       width: 20,
                     ),
                     Container(
-                        height: 250,
-                        width: 350,
-                        child: sponsorImageHolder.fdm,
-                        padding: rowSpacing,
+                      height: 175,
+                      width: 350,
+                      child: sponsorImageHolder.fdm,
+                      padding: rowSpacing,
                     ),
                     SizedBox(
                       height: 20,
                       width: 20,
                     ),
                     Container(
-                      height: 250,
+                      height: 175,
                       width: 350,
                       child: sponsorImageHolder.cyai,
                       padding: rowSpacing,
@@ -72,9 +72,9 @@ class SponsorsDesktop extends StatelessWidget {
                       width: 20,
                     ),
                     Container(
-                        height: 250,
-                        width: 350,
-                        child: sponsorImageHolder.wnv,
+                      height: 175,
+                      width: 350,
+                      child: sponsorImageHolder.wnv,
                     ),
                     SizedBox(
                       height: 20,
@@ -105,4 +105,5 @@ class SponsorsDesktop extends StatelessWidget {
       ],
     );
   }
+
 }
