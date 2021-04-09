@@ -80,6 +80,8 @@ flutter:
     - assets/CYAI_Logo_purple_block_with_URL.png
     - assets/FCEDALogo.png
     - assets/FCEDA_Talent_Logo_Update_V2.png
+    - assets/NOVALogo_launchYourCareer_reversed.png
+    - assets/fcedaLogoReversedBlueIcon.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
