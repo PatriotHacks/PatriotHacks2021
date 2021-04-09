@@ -72,9 +72,10 @@ class SponsorsDesktop extends StatelessWidget {
                       width: 20,
                     ),
                     Container(
-                        height: 250,
+                        height: 200,
                         width: 350,
                         child: sponsorImageHolder.wnv,
+                      padding: EdgeInsets.only(top: 50),
                     ),
                     SizedBox(
                       height: 20,

@@ -72,9 +72,10 @@ class SponsorsMobile extends StatelessWidget {
                       width: 20,
                     ),
                     Container(
-                      height: 145,
+                      height: 100,
                       width: 350,
                       child: sponsorImageHolder.wnv,
+                      padding: EdgeInsets.only(top: 50),
                     ),
                     SizedBox(
                       height: 0,
