@@ -8,8 +8,8 @@ const RESOURCES = {
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "favicon.png": "43e30d48e2db826eb34c3c70fb5f0901",
 "manifest.json": "28366a967479e7dedce1a82094b5d111",
-"index.html": "f8a84bc8b566fcbb8808ee332157c6f8",
-"/": "f8a84bc8b566fcbb8808ee332157c6f8",
+"index.html": "9546596b419b537295a9a3393298c655",
+"/": "9546596b419b537295a9a3393298c655",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf": "dffd9504fcb1894620fa41c700172994",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "4b6a9b7c20913279a3ad3dd9c96e155b",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "00bb2b684be61e89d1bc7d75dee30b58",
@@ -35,7 +35,7 @@ const RESOURCES = {
 "assets/assets/accurture.png": "9fe43a946f451d9dec10305680da3da6",
 "assets/assets/logo-2018-hi-res-green.png": "77f6b308c6764fc5fdb01984b6cc2886",
 "assets/FontManifest.json": "6269fae5306b5fe20a77bc9f138894a0",
-"main.dart.js": "5cfa4bb2113ca26e403157a2c4a27ba6",
+"main.dart.js": "a5560c88765619a84223e770dbee862e",
 "version.json": "b2238f5dca1fe30b64659b372df25202"
 };
 
