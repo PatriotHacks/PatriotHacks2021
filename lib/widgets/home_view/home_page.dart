@@ -82,16 +82,324 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               verticalSpace(20),
-              homePageButton("Register", RegisterRoute, context),
-              verticalSpace(10),
-              // homePageButton("Mentor", mentorButtonLink),
+              // homePageButton("Register", RegisterRoute, context),
               // verticalSpace(10),
+              Container(
+                child: Text(
+                  'Schedule',
+                  style: TextStyle(
+                    fontSize: sizingInformation.isMobile ? 20 : wiphFontSize,
+                    color: colorsHolder.patriotGold,
+                  ),
+                ),
+              ),
+              verticalSpace(20),
+              // homePageButton("Mentor", mentorButtonLink),
               // homePageButton("Our sponsors!", SponsorsRoute, context),
-              /* SizedBox(
+              SizedBox(
                 child: imagesHolder.schedule,
-                height: sizingInformation.isMobile ? 450 : 700,
-                width: sizingInformation.isMobile ? 450 : 700,
-              ) */
+                height: sizingInformation.isMobile ? 700 : 700,
+                width: sizingInformation.isMobile ? 700 : 700,
+              ),
+              verticalSpace(40),
+              Container(
+                child: Text(
+                  'Tracks',
+                  style: TextStyle(
+                    fontSize: sizingInformation.isMobile ? 20 : wiphFontSize,
+                    color: colorsHolder.patriotGold,
+                  ),
+                ),
+              ),
+              verticalSpace(20),
+              Container(
+                padding: EdgeInsets.only(
+                  top: 10,
+                  bottom: 15,
+                ),
+                child: RichText(
+                  text: TextSpan(
+                    text: 'Best Overall Hack: ',
+                    style: TextStyle(
+                        fontFamily: fontHolder.paragraphFont,
+                        fontSize: sizingInformation.isMobile ? 15 : wiphParagraphFontSize,
+                        color: colorsHolder.patriotGold,
+                        height: 1.25
+                    ),
+                    children: [
+                      TextSpan(
+                        text: 'All are automatically entered in this track, good luck and may the odds ever be in your favor.\nNintendo Switches will be awarded to the team with the best overall project.',
+                        style: TextStyle(
+                            fontFamily: fontHolder.paragraphFont,
+                            fontSize: sizingInformation.isMobile ? 15 : wiphParagraphFontSize,
+                            color: colorsHolder.patriotGreen,
+                            height: 1.25
+                        )
+                      )
+                    ],
+                  ),
+                  textAlign: TextAlign.center,
+                  strutStyle: StrutStyle(
+                    fontSize: wiphParagraphFontSize,
+                  ),
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.only(
+                  top: 10,
+                  bottom: 15,
+                ),
+                child: RichText(
+                  text: TextSpan(
+                    text: 'Financial Track: ',
+                    style: TextStyle(
+                        fontFamily: fontHolder.paragraphFont,
+                        fontSize: sizingInformation.isMobile ? 15 : wiphParagraphFontSize,
+                        color: colorsHolder.patriotGold,
+                        height: 1.25
+                    ),
+                    children: [
+                      TextSpan(
+                          text: 'College students struggle with budgeting, and poor financial decisions can lead to bad spending habits. Can you develop a way to help people make smart financial decisions? \nEach team member receives a \$100 VISA giftcard.',
+                          style: TextStyle(
+                              fontFamily: fontHolder.paragraphFont,
+                              fontSize: sizingInformation.isMobile ? 15 : wiphParagraphFontSize,
+                              color: colorsHolder.patriotGreen,
+                              height: 1.25
+                          )
+                      )
+                    ],
+                  ),
+                  textAlign: TextAlign.center,
+                  strutStyle: StrutStyle(
+                    fontSize: wiphParagraphFontSize,
+                  ),
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.only(
+                  top: 10,
+                  bottom: 15,
+                ),
+                child: RichText(
+                  text: TextSpan(
+                    text: 'Health: ',
+                    style: TextStyle(
+                        fontFamily: fontHolder.paragraphFont,
+                        fontSize: sizingInformation.isMobile ? 15 : wiphParagraphFontSize,
+                        color: colorsHolder.patriotGold,
+                        height: 1.25
+                    ),
+                    children: [
+                      TextSpan(
+                          text: 'During the first few months of covid, many became worried about their health, and started making changes to their lives. Can you help people develop a healthier lifestyle? \nAfter all that hacking, go workout with FitBit Charge for all the members!',
+                          style: TextStyle(
+                              fontFamily: fontHolder.paragraphFont,
+                              fontSize: sizingInformation.isMobile ? 15 : wiphParagraphFontSize,
+                              color: colorsHolder.patriotGreen,
+                              height: 1.25
+                          )
+                      )
+                    ],
+                  ),
+                  textAlign: TextAlign.center,
+                  strutStyle: StrutStyle(
+                    fontSize: wiphParagraphFontSize,
+                  ),
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.only(
+                  top: 10,
+                  bottom: 15,
+                ),
+                child: RichText(
+                  text: TextSpan(
+                    text: 'Sustainability: ',
+                    style: TextStyle(
+                        fontFamily: fontHolder.paragraphFont,
+                        fontSize: sizingInformation.isMobile ? 15 : wiphParagraphFontSize,
+                        color: colorsHolder.patriotGold,
+                        height: 1.25
+                    ),
+                    children: [
+                      TextSpan(
+                          text: 'Climate change has been a threat for years, and companies and individuals have been more active in trying to do their part in reducing waste and helping the climate. Can you come up with an idea that can help save the earth?\nBe blown away with Patagonia jackets for the entire team!',
+                          style: TextStyle(
+                              fontFamily: fontHolder.paragraphFont,
+                              fontSize: sizingInformation.isMobile ? 15 : wiphParagraphFontSize,
+                              color: colorsHolder.patriotGreen,
+                              height: 1.25
+                          )
+                      )
+                    ],
+                  ),
+                  textAlign: TextAlign.center,
+                  strutStyle: StrutStyle(
+                    fontSize: wiphParagraphFontSize,
+                  ),
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.only(
+                  top: 10,
+                  bottom: 15,
+                ),
+                child: RichText(
+                  text: TextSpan(
+                    text: 'Education: ',
+                    style: TextStyle(
+                        fontFamily: fontHolder.paragraphFont,
+                        fontSize: sizingInformation.isMobile ? 15 : wiphParagraphFontSize,
+                        color: colorsHolder.patriotGold,
+                        height: 1.25
+                    ),
+                    children: [
+                      TextSpan(
+                          text: 'When the pandemic began, education was suddenly forced to move online, and many have expressed dissatisfaction with the quality of education they received. Do you have a way to make education better?\nMake presenting easy with mini projectors for all the members on your team! (or set up movie nights)',
+                          style: TextStyle(
+                              fontFamily: fontHolder.paragraphFont,
+                              fontSize: sizingInformation.isMobile ? 15 : wiphParagraphFontSize,
+                              color: colorsHolder.patriotGreen,
+                              height: 1.25
+                          )
+                      )
+                    ],
+                  ),
+                  textAlign: TextAlign.center,
+                  strutStyle: StrutStyle(
+                    fontSize: wiphParagraphFontSize,
+                  ),
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.only(
+                  top: 10,
+                  bottom: 15,
+                ),
+                child: RichText(
+                  text: TextSpan(
+                    text: 'Most likely to become a startup: ',
+                    style: TextStyle(
+                        fontFamily: fontHolder.paragraphFont,
+                        fontSize: sizingInformation.isMobile ? 15 : wiphParagraphFontSize,
+                        color: colorsHolder.patriotGold,
+                        height: 1.25
+                    ),
+                    children: [
+                      TextSpan(
+                          text: 'Every start-up originates as an idea! Does yours have potential to become a unicorn?\nStay up late working with your new cofounders and mini Keurig for the team.',
+                          style: TextStyle(
+                              fontFamily: fontHolder.paragraphFont,
+                              fontSize: sizingInformation.isMobile ? 15 : wiphParagraphFontSize,
+                              color: colorsHolder.patriotGreen,
+                              height: 1.25
+                          )
+                      )
+                    ],
+                  ),
+                  textAlign: TextAlign.center,
+                  strutStyle: StrutStyle(
+                    fontSize: wiphParagraphFontSize,
+                  ),
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.only(
+                  top: 10,
+                  bottom: 15,
+                ),
+                child: RichText(
+                  text: TextSpan(
+                    text: 'Patriot Favorite: ',
+                    style: TextStyle(
+                        fontFamily: fontHolder.paragraphFont,
+                        fontSize: sizingInformation.isMobile ? 15 : wiphParagraphFontSize,
+                        color: colorsHolder.patriotGold,
+                        height: 1.25
+                    ),
+                    children: [
+                      TextSpan(
+                          text: 'Everyone has a favorite project. Can you become one of ours?\nA gift card to (our) favorite study hangout, Panera Bread.',
+                          style: TextStyle(
+                              fontFamily: fontHolder.paragraphFont,
+                              fontSize: sizingInformation.isMobile ? 15 : wiphParagraphFontSize,
+                              color: colorsHolder.patriotGreen,
+                              height: 1.25
+                          )
+                      )
+                    ],
+                  ),
+                  textAlign: TextAlign.center,
+                  strutStyle: StrutStyle(
+                    fontSize: wiphParagraphFontSize,
+                  ),
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.only(
+                  top: 10,
+                  bottom: 15,
+                ),
+                child: RichText(
+                  text: TextSpan(
+                    text: 'Best All Female Hack: ',
+                    style: TextStyle(
+                        fontFamily: fontHolder.paragraphFont,
+                        fontSize: sizingInformation.isMobile ? 15 : wiphParagraphFontSize,
+                        color: colorsHolder.patriotGold,
+                        height: 1.25
+                    ),
+                    children: [
+                      TextSpan(
+                          text: 'Some of the best technological advancements have been made thanks to women! Will your all women team be the next Ada Lovelace?\nExperiment with Rasberry PI 4 starter kits for all the team members.',
+                          style: TextStyle(
+                              fontFamily: fontHolder.paragraphFont,
+                              fontSize: sizingInformation.isMobile ? 15 : wiphParagraphFontSize,
+                              color: colorsHolder.patriotGreen,
+                              height: 1.25
+                          )
+                      )
+                    ],
+                  ),
+                  textAlign: TextAlign.center,
+                  strutStyle: StrutStyle(
+                    fontSize: wiphParagraphFontSize,
+                  ),
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.only(
+                  top: 10,
+                  bottom: 15,
+                ),
+                child: RichText(
+                  text: TextSpan(
+                    text: 'Best Beginner: ',
+                    style: TextStyle(
+                        fontFamily: fontHolder.paragraphFont,
+                        fontSize: sizingInformation.isMobile ? 15 : wiphParagraphFontSize,
+                        color: colorsHolder.patriotGold,
+                        height: 1.25
+                    ),
+                    children: [
+                      TextSpan(
+                          text: 'Tired of seeing entry level positions marketed towards people with 5+ years of experience? Tired of being turned away for not having any experience? Everyone has to start somewhere!\nAll teams comprising of newcomers are welcome to try this track!\nAll team members will receive a Corsair K55 keyboard!',
+                          style: TextStyle(
+                              fontFamily: fontHolder.paragraphFont,
+                              fontSize: sizingInformation.isMobile ? 15 : wiphParagraphFontSize,
+                              color: colorsHolder.patriotGreen,
+                              height: 1.25
+                          )
+                      )
+                    ],
+                  ),
+                  textAlign: TextAlign.center,
+                  strutStyle: StrutStyle(
+                    fontSize: wiphParagraphFontSize,
+                  ),
+                ),
+              ),
             ],
           ),
         );

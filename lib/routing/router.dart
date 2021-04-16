@@ -18,7 +18,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return _getPageRoute(RegisterView(), settings);
     case SponsorsRoute:
       return _getPageRoute(SponsorsView(), settings);
-    case DiscordRoute:
+    case EventInfo:
       return _getPageRoute(DiscordView(), settings);
     case FAQRoute:
       return _getPageRoute(FAQView(), settings);

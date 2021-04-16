@@ -5,7 +5,7 @@ class DiscordView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Body(height:50, child: Center(
-      child: Text('discord view'),
+      child: Text('Coming soon'),
     ),);
   }
 }

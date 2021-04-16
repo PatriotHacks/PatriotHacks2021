@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:patriot_hacks/routing/route_names.dart';
 import 'package:patriot_hacks/widgets/navigation_drawer/drawer_item.dart';
 import 'package:patriot_hacks/widgets/navigation_drawer/navigation_drawer_header.dart';
-import 'package:pointer_interceptor/pointer_interceptor.dart';
+
 
 class NavigationDrawer extends StatelessWidget {
   @override
@@ -21,9 +21,9 @@ class NavigationDrawer extends StatelessWidget {
             NavigationDrawerHeader(),
             SizedBox(height: 15,),
             DrawerItem('Home', HomeRoute),
-            DrawerItem('Register', RegisterRoute),
+            // DrawerItem('Register', RegisterRoute),
             DrawerItem('Sponsors', SponsorsRoute),
-            // DrawerItem('Discord', DiscordRoute),
+            // DrawerItem('Event info', EventInfo),
             DrawerItem('FAQ', FAQRoute),
             DrawerItem('Contact us', ContactUsRoute),
             SizedBox(height: 15,)

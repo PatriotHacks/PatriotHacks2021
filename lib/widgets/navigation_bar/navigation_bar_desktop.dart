@@ -6,6 +6,7 @@ import 'navigation_bar_item.dart';
 import 'navigation_bar_logo.dart';
 
 class NavigationBarDesktop extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -21,15 +22,15 @@ class NavigationBarDesktop extends StatelessWidget {
               SizedBox(
                 width: 20,
               ),
-              NavigationBarItem('Register', RegisterRoute),
-              SizedBox(
-                width: 20,
-              ),
+              // NavigationBarItem('Register', RegisterRoute),
+              // SizedBox(
+              //   width: 20,
+              // ),
               NavigationBarItem('Sponsors', SponsorsRoute),
               SizedBox(
                 width: 20,
               ),
-              // NavigationBarItem('Discord', DiscordRoute),
+              // NavigationBarItem('Event info', EventInfo),
               // SizedBox(
               //   width: 20,
               // ),
